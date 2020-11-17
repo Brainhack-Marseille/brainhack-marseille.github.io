@@ -531,6 +531,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#hero .img-fluid{
+  max-width: 150%;
+}
+
 @media (max-width: 575px) {
   #hero .hero-img img {
     width: 80%;
