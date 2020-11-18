@@ -363,7 +363,7 @@
         <div class="section-title">
           <h2>Projects</h2>
           <p>Here you can find all the informations about the event projects. <br>
-            If you want to <b>submit a project</b> you should follow the link, fill the form, and send it as a github issue. </p>
+            If you want to <b>submit a project</b> you should follow the link, fill the form, and open a github issue. Projects can be anything you'd like to work on during the event with other people (coding, discussing a procedure with coworkers, brainstorming about a new idea), as long as you're ready to minimally organize this! </p>
         </div>
         <div class="d-flex justify-content-center">
           <a class="btn btn-warning" href="https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/new?assignees=&labels=Brainhack+project&template=brainhack-project-template.md&title=" target="_blank"><h4>SUBMIT PROJECT</h4></a>
@@ -379,21 +379,26 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="mx-auto d-block w-50" src="images/projects/project1.svg" alt="First slide">
+              <a class="scrollto active" href="#project1">
+                <img class="mx-auto d-block w-50" src="images/projects/project1.svg" alt="First slide">
+              </a>
               <div class="carousel-caption d-none d-md-block">
-                <a href="#project1">
+                <a class="scrollto active" href="#project1">
                   <h5>Optimization and GPU porting of information flow implementation</h5>
                 </a>
                 <p>by Etienne Combrisson & Ruggero Basanisi</p>
               </div>
             </div>
-            <!-- <div class="carousel-item active">
-              <img class="mx-auto d-block w-50" src="images/frites.svg" alt="Second slide">
+
+<!--             <div class="carousel-item active">
+              <a class="scrollto active" href="#project1">
+                <img class="mx-auto d-block w-50" src="images/projects/project1.svg" alt="First slide">
+              </a>
               <div class="carousel-caption d-none d-md-block">
-                <a href="#project2">
-                  <h5>Test</h5>
+                <a class="scrollto active" href="#project1">
+                  <h5>Optimization and GPU porting of information flow implementation</h5>
                 </a>
-                <p>Thisi is a test</p>
+                <p>by Etienne Combrisson & Ruggero Basanisi</p>
               </div>
             </div> -->
 
@@ -413,9 +418,11 @@
 
 
         <!-- ======= Project description bullet ======= -->
-        <div class="row justify-content-center align-items-center">
+        <a class="active" id="project1">
+          <div class="row justify-content-center align-items-center">
+        </a>
 
-          <div class="col-lg-4 col-xs-2 col-md-2">
+          <div class="col-lg-4 col-md-5 col-sm-8 col-xs-1 col-md-2">
             <img src="images/projects/project1.svg" class="img-fluid" alt="">
           </div>
 
@@ -423,9 +430,9 @@
 
             <div class="container my-4">
 
-              <a id="project1">
-                <h3>Optimization and GPU porting of information flow implementation</h3>
-              </a>
+              <!-- <a id="project1"> -->
+              <h3>Optimization and GPU porting of information flow implementation</h3>
+              <!-- </a> -->
               <p>
                 by Etienne Combrisson & Ruggero Basanisi
               </p>
