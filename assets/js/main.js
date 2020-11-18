@@ -200,4 +200,14 @@
     aos_init();
   });
 
+
+var img = document.getElementById("mrs_bb"),
+  count = 0;
+img.onclick = function() {
+  count += 1;
+  if (count==13) {
+    window.open("https://youtu.be/-CVn3-3g_BI?t=51");
+  }
+};
+
 })(jQuery);
