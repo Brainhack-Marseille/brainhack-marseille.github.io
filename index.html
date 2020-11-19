@@ -375,9 +375,10 @@
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
           </ol>
           <div class="carousel-inner">
+
             <div class="carousel-item active">
               <a class="scrollto active" href="#project1">
                 <img class="mx-auto d-block w-50" src="images/projects/project1.svg" alt="First slide">
@@ -390,7 +391,19 @@
               </div>
             </div>
 
-<!--             <div class="carousel-item active">
+            <div class="carousel-item">
+              <a class="scrollto active" href="#project2">
+                <img class="mx-auto d-block w-50" src="images/projects/project2.jpg" alt="Second slide">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <a class="scrollto active" href="#project2">
+                  <h5>eCOBIDAS: a webApp to that writes your methods section for you</h5>
+                </a>
+                <p>by Rémi Gau</p>
+              </div>
+            </div>
+
+<!--             <div class="carousel-item">
               <a class="scrollto active" href="#project1">
                 <img class="mx-auto d-block w-50" src="images/projects/project1.svg" alt="First slide">
               </a>
@@ -410,17 +423,17 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </div>
+          </div>
         </div>
 
 
         <hr>
 
 
-        <!-- ======= Project description bullet ======= -->
-        <a class="active" id="project1">
-          <div class="row justify-content-center align-items-center">
-        </a>
+      <!-- ======= Project1 description bullet ======= -->
+      <a class="active" id="project1">
+        <div class="row justify-content-center align-items-center">
+      </a>
 
           <div class="col-lg-4 col-md-5 col-sm-8 col-xs-1 col-md-2">
             <img src="images/projects/project1.svg" class="img-fluid" alt="">
@@ -434,7 +447,8 @@
               <h3>Optimization and GPU porting of information flow implementation</h3>
               <!-- </a> -->
               <p>
-                by Etienne Combrisson & Ruggero Basanisi
+                by <a style="color: black" href="https://twitter.com/knearneighbors">Etienne Combrisson</a> 
+                & <a style="color: black" href="https://twitter.com/rbasasasa">Ruggero Basanisi</a> 
               </p>
 
               <hr>
@@ -460,14 +474,15 @@
           <div class="col" data-aos="fade-left" data-aos-delay="100">
             <h4>Required skills</h4>
             This is a python based project, a github link will be provided to collaborate.
+          </div>
 
         <div class="row justify-content-center mt-4">
+
             <div class="progress">
-              <div class="progress-bar bg-info font-weight-bold" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                Python 100%
+              <div class="progress-bar bg-info font-weight-bold" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Python 90%
               </div>
             </div>
-
 
             <div class="progress">
               <div class="progress-bar bg-success font-weight-bold" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
@@ -483,8 +498,80 @@
 
           </div>
         </div>
-    </section>
+        <hr style="height:20px">
+      <!-- =========================== -->
+
+      <!-- ======= Project2 description bullet ======= -->
+      <a class="active" id="project2">
+        <div class="row justify-content-center align-items-center">
+      </a>
+
+          <div class="col-lg-4 col-md-5 col-sm-8 col-xs-1 col-md-2">
+            <img src="images/projects/project2.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col">
+
+            <div class="container my-4">
+
+              <!-- <a id="project1"> -->
+              <h3>eCOBIDAS: a webApp to that writes your methods section for you</h3>
+              <!-- </a> -->
+              <p>
+                by <a style="color: black" href="https://twitter.com/RemiGau">Rémi Gau</a>
+              </p>
+
+              <hr>
+
+              <button class="btn btn-link btn-outline-primary font-weight-bold" data-toggle="collapse" href="#collapse_project2" role="button" aria-controls="collapse_project2"><h4>Description</h3></button>
+
+              <section class="collapse" id="collapse_project2">
+                The main aim of this project is to <b>improve reporting methods and results in neuroimaging</b> (f/MRI, i/EEG, MEG, PET...) in order to increase transparency and reproducibility. We want to do this by developing a set webapps to run checklists based on best practices guidelines and recommendation of a field, that are both easy and practical to use, that provides a machine readable summary of an experiment and its analysis, and that can then automatically generate parts of the methods section. To get started you can explore the <a href="https://github.com/Remi-Gau/eCobidas">github page</a> of the project and the retalive <a href="https://remi-gau.github.io/eCobidas/">documentation</a>.
+
+                <br>You can find several "good first issues" <a href="https://github.com/Remi-Gau/eCobidas/labels/good%20first%20issue">here</a> but during this event I would like to focus on:
+
+                <ul>
+                  <li>Making sure the documenation is understandable and constitute good on-board and How-To materieal</li>
+                  <li>Create some prototype script / toy example that can take the output of the app and generate a method section</li>
+                </ul>
+              </section>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col" data-aos="fade-left" data-aos-delay="100">
+            <h4>Required skills</h4>
+            The project has many moving parts so there is a certain level of flexibility in terms of skills needed.
+          </div>
+
+        <div class="row justify-content-center mt-4">
+
+            <div class="progress">
+              <div class="progress-bar bg-info font-weight-bold" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Handling spreadsheets 80%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-success font-weight-bold" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Python 60%
+              </div>
+            </div>
+
+            <!-- <div class="progress">
+              <div class="progress-bar bg-danger font-weight-bold" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                GPU programming 20%
+              </div>
+            </div> -->
+
+          </div>
+        </div>
+        <hr style="height:20px">
     <!-- =========================== -->
+    </section>
+
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
