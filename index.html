@@ -376,6 +376,7 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
           </ol>
           <div class="carousel-inner">
 
@@ -415,6 +416,19 @@
                   <h5>DIGLaB : DIGital Lab Book</h5>
                 </a>
                 <p>by Fred Barthelemy, Sylvain Takerkart, Julia Sprenger</p>
+              </div>
+            </div>
+
+            <!-- PROJECT 4 : macapype -->
+            <div class="carousel-item">
+              <a class="scrollto active" href="#project4">
+                <img class="mx-auto d-block w-50" src="images/projects/project4.jpg" alt="Fourth slide">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <a class="scrollto active" href="#project4">
+                  <h5>Macapype: segmentation to mesh pipeline</h5>
+                </a>
+                <p>by David Meunier, Bastien Cagna & Kep Kee Loh</p>
               </div>
             </div>
 
@@ -473,6 +487,7 @@
 
               <section class="collapse" id="collapse_project1">
                 Frites is a recent pure Python package (<a href="https://github.com/brainets/frites/" target="_blank">https://github.com/brainets/frites</a>) to analyse neurophysiological data within the Information Theoretical framework and to perform group-level statistics on information-based measures. The aim of the software is to extract brain networks that are modulated according to the task (model-based and model free analysis). To this end, Frites contains several CPU-based functions to estimate the directed information flow between brain areas. While those methods estimate the directed connectivity in a reasonable amount of time on small networks, the complexity of larger networks are too demanding for the current CPU implementation. Therefore, the ultimate goal of this project would be to have both a CPU and a GPU implementations of our recent multivariate information flow measure (<a href="https://github.com/brainets/xfrites/blob/main/xfrites/conn/conn_pca_covgc_cpu.py#L115" target="_blank">link here</a>).
+                <br>
                 <br>The following points are going to be addressed in this project:
 
                 <ul>
@@ -543,7 +558,7 @@
 
               <section class="collapse" id="collapse_project2">
                 The main aim of this project is to <b>improve reporting methods and results in neuroimaging</b> (f/MRI, i/EEG, MEG, PET...) in order to increase transparency and reproducibility. We want to do this by developing a set webapps to run checklists based on best practices guidelines and recommendation of a field, that are both easy and practical to use, that provides a machine readable summary of an experiment and its analysis, and that can then automatically generate parts of the methods section. To get started you can explore the <a href="https://github.com/Remi-Gau/eCobidas">github page</a> of the project and the retalive <a href="https://remi-gau.github.io/eCobidas/">documentation</a>.
-
+                <br>
                 <br>You can find several "good first issues" <a href="https://github.com/Remi-Gau/eCobidas/labels/good%20first%20issue">here</a> but during this event I would like to focus on:
 
                 <ul>
@@ -572,16 +587,22 @@
             </div>
 
             <div class="progress">
-              <div class="progress-bar bg-success font-weight-bold" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                Python 60%
+              <div class="progress-bar bg-success font-weight-bold" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                EEG / MEG / MRI 70%
               </div>
             </div>
 
-            <!-- <div class="progress">
-              <div class="progress-bar bg-danger font-weight-bold" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                GPU programming 20%
+            <div class="progress">
+              <div class="progress-bar bg-danger font-weight-bold" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Linked data 50%
               </div>
-            </div> -->
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-warning font-weight-bold" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Python/Javascript 20%
+              </div>
+            </div>
 
         </div>
         <hr style="height:20px">
@@ -609,9 +630,9 @@
 
             <hr>
 
-            <button class="btn btn-link btn-outline-primary font-weight-bold" data-toggle="collapse" href="#collapse_project1" role="button" aria-controls="collapse_project1"><h4>Description</h3></button>
+            <button class="btn btn-link btn-outline-primary font-weight-bold" data-toggle="collapse" href="#collapse_project3" role="button" aria-controls="collapse_project3"><h4>Description</h3></button>
 
-            <section class="collapse" id="collapse_project1">
+            <section class="collapse" id="collapse_project3">
               The goal of this project is to provide an user-friendly digital alternative to the classical lab book to the experimentalists working with non-human primates. The advantage of a digital version of the notebook are plenty:
               <ul>
                 <li>Can be read by automatic process for storage of comments or metadata</li>
@@ -663,6 +684,78 @@
           
       </div>
       <hr style="height:20px">
+    <!-- =========================== -->
+
+    <!-- ======= Project4 description bullet ======= -->
+      <a class="active" id="project4">
+        <div class="row justify-content-center align-items-center">
+      </a>
+
+          <div class="col-lg-4 col-md-5 col-sm-8 col-xs-1 col-md-2">
+            <img src="images/projects/project4.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col">
+
+            <div class="container my-4">
+
+              <!-- <a id="project1"> -->
+              <h3>Macapype: segmentation to mesh pipeline</h3>
+              <!-- </a> -->
+              <p>
+                by <a style="color: black" href="https://github.com/davidmeunier79">David Meunier</a>, Bastien Cagna & <a style="color: black" href="https://github.com/kepkeeloh">Kep Kee Loh</a>
+              </p>
+
+              <hr>
+
+              <button class="btn btn-link btn-outline-primary font-weight-bold" data-toggle="collapse" href="#collapse_project4" role="button" aria-controls="collapse_project4"><h4>Description</h3></button>
+
+              <section class="collapse" id="collapse_project4">
+                Macapype is an open source python package based on the nipype framework. Dedicated to the processing of PNH MRI data, Macapype brings together existing tools from popular neuroimaging softwares (e.g. FSL, ANTs, SPM, AFNI etc), and the wraps of specialised scripts for PNH MRI data processing. Currently, Macapype also provides predefined pipelines for the preprocessing, brain extraction, and segmentation of PNH MRI data that are easy to use, and customizable to various input file types (T1w or T1w/T2w). These segmentation pipelines have been successfully adapted to MR images from various PNH species, including the macaque monkey, baboons and marmosets. To get started you can explore the <a href="https://github.com/Macatools/macapype">github page</a> of the project and the retalive <a href="https://macatools.github.io/macapype/index.html">documentation</a>. 
+                <br>Link to the <a href="https://framateam.org/macapype-users/channels/town-square">mattermost users forum</a> (requires a framateam account).
+                <br>
+                <br>In this brainhack, we would like to expand the existing pipelines of Macapype to allow the generation of surface meshes following the segmentation of the MR images. So far, at the INT, macapype users have been performing the above process (i.e. surface mesh generation) by first, using a set of customised scripts to import Macapype-generated segmentations into Brainvisa, and second, to manually (point-and-click) generate surface meshes via the Morphologist Toolbox in Brainvisa. We aim to incorporate these two steps as an additional module in Macapype, which will enable the generation of surface meshes directly from the segmentations produced by Macapype. The final result would be a powerful pipeline that takes raw PNH structural MR scans as input, and generating tissue segmentation masks and surface meshes as outputs.
+              </section>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col" data-aos="fade-left" data-aos-delay="100">
+            <h4>Required skills</h4>
+            Other related softwares can be used for this project, such as BrainVISA, FreeSurfer and Nipype. Anyone that has PNH data to process is welcome.
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+
+            <div class="progress">
+              <div class="progress-bar bg-info font-weight-bold" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                MRI data processing 80%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-success font-weight-bold" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Python 60%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-danger font-weight-bold" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Nipype coding 50%
+              </div>
+            </div>
+
+<!--             <div class="progress">
+              <div class="progress-bar bg-warning font-weight-bold" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Python/Javascript 20%
+              </div>
+            </div> -->
+
+        </div>
+        <hr style="height:20px">
     <!-- =========================== -->
 
     </section>
