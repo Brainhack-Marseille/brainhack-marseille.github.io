@@ -278,6 +278,7 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
           </ol>
           <div class="carousel-inner">
 
@@ -330,6 +331,19 @@
                   <h5>Macapype: segmentation to mesh pipeline</h5>
                 </a>
                 <p>by David Meunier, Bastien Cagna & Kep Kee Loh</p>
+              </div>
+            </div>
+
+            <!-- PROJECT 5 : DAX -->
+            <div class="carousel-item">
+              <a class="scrollto active" href="#project5">
+                <img class="mx-auto d-block w-50" src="images/projects/project5.jpg" alt="Fifth slide">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <a class="scrollto active" href="#project5">
+                  <h5>Integration of DAX pipeline with XNAT</h5>
+                </a>
+                <p>by Dipankar Bachar, David Meunier & Aissam Rahmani</p>
               </div>
             </div>
 
@@ -657,6 +671,98 @@
 
         </div>
         <hr style="height:20px">
+    <!-- =========================== -->
+
+    <!-- ======= Project5 description bullet ======= -->
+    <a class="active" id="project5">
+      <div class="row justify-content-center align-items-center">
+    </a>
+
+        <div class="col-lg-4 col-md-5 col-sm-8 col-xs-1 col-md-2">
+          <img src="images/projects/project5.jpg" class="img-fluid" alt="">
+        </div>
+
+        <div class="col">
+
+          <div class="container my-4">
+
+            <!-- <a id="project5"> -->
+            <h3>Integration of DAX pipeline with XNAT</h3>
+            <!-- </a> -->
+            <p>
+              by <a style="color: black" href="https://github.com/dipankarB">Dipankar Bachar</a>,
+              <a style="color: black" href="https://github.com/davidmeunier79">David Meunier</a> &
+              <a style="color: black" href="https://github.com/aissamr">Aissam Rahmani</a> 
+            </p>
+
+            <hr>
+
+            <button class="btn btn-link btn-outline-primary font-weight-bold" data-toggle="collapse" href="#collapse_project5" role="button" aria-controls="collapse_project5"><h4>Description</h3></button>
+
+            <section class="collapse" id="collapse_project5">
+              Large scale image processing demands a standardized way of not only storage but also a method for job distribution and scheduling. The eXtensible Neuroimaging Archive Toolkit (XNAT) is one of several platforms that seeks to solve the storage issues. Distributed Automation for XNAT (DAX) is a job control and distribution manager. DAX allows to store analyzed imaging data on XNAT (datatypes), extract information from XNAT via scripts (Xnat_tools), run pipelines on the data in XNAT via a cluster ( processors ). We are working towards the integration of DAX pipeline to our XNAT datamanagement tools.
+              <br>
+              <br>External links :
+              <ul>
+                <li>xnat : <a href="https://www.xnat.org/">https://www.xnat.org/</a></li>
+                <li>DAX : <a href="https://dax.readthedocs.io/en/latest/index.html">https://dax.readthedocs.io/en/latest/index.html</a></li>
+              </ul>
+              Reference :
+              <br>DAX - The Next Generation: Towards One Million Processes on Commodity Hardware, Stephen M Damon, Brian D Boyd , Andrew J Plassard , Warren Taylor , Bennett A Landman, PMID: 28919661 PMCID: PMC5596878 DOI: 10.1117/12.2254371 (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5596878/">link</a>)
+              
+              <br>
+              <br>The goals of this BrainHack project are :
+              <ul>
+                <li>to discuss the working of DAX pipeline and if possible with a live demo</li>
+                <li>to understand the working of Spyder in DAX, how to configure it</li>
+                <li>to test the DAX command lines</li>
+                <li>to try to solve the technical challenges of installations</li>
+                <li>to understand/learn the DAX processors</li>
+                <li>to understand/learn how to write the YAML scripts</li>
+                <li>to learn how to prepare a YAML script for DAX processor in RedCAP.</li>
+              </ul>
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col" data-aos="fade-left" data-aos-delay="100">
+          <h4>Required skills</h4>
+          This is a cross-language project. Experience with super computers is also welcomed
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-4">
+
+        <div class="progress">
+          <div class="progress-bar bg-info font-weight-bold" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" title="Basic understanding of any image data management tools like xnat">
+            Image data management (e.g xnat) 40%
+          </div>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar bg-success font-weight-bold" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" title="Basic understanding of python scripts">
+            Python 50%
+          </div>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar bg-danger font-weight-bold" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" title="Basic understanding of shell scripts">
+            Shell 50%
+          </div>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar bg-warning font-weight-bold" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" title="Understanding of scientific calculations in super computer">
+            Experience with super computer 50%
+          </div>
+        </div>
+
+      </div>
+      <hr style="height:20px">
     <!-- =========================== -->
 
     </section>
