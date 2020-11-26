@@ -280,6 +280,7 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
           </ol>
           <div class="carousel-inner">
 
@@ -361,6 +362,18 @@
               </div>
             </div>
 
+            <!-- PROJECT 7 : Slam -->
+            <div class="carousel-item">
+              <a class="scrollto active" href="#project7">
+                <img class="mx-auto d-block w-50" src="images/projects/project7.png" alt="Sixth slide">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <a class="scrollto active" href="#project7">
+                  <h5>Optimized Pipeline for the modelling of Spiking Neural Networks (SNNs)</h5>
+                </a>
+                <p>by Alberto Vergani, Laurent Perrinet & Julia Sprenger</p>
+              </div>
+            </div>
             <!-- <div class="carousel-item">
               <a class="scrollto active" href="#project1">
                 <img class="mx-auto d-block w-50" src="images/projects/project1.svg" alt="First slide">
@@ -862,6 +875,95 @@
       </div>
       <hr style="height:20px">
     <!-- =========================== -->
+
+        <!-- ======= Project6 description bullet ======= -->
+        <a class="active" id="project7">
+          <div class="row justify-content-center align-items-center">
+        </a>
+
+            <div class="col-lg-4 col-md-5 col-sm-8 col-xs-1 col-md-2">
+              <img src="images/projects/project7.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+
+              <div class="container my-4">
+
+                <!-- <a id="project1"> -->
+                <h3>Optimized Pipeline for the modelling of Spiking Neural Networks (SNNs)</h3>
+                <!-- </a> -->
+                <p>
+                  by Alberto Vergani, <a style="color: black" href="https://github.com/laurentperrinet">Laurent Perrinet</a> & <a style="color: black" href="https://github.com/JuliaSprenger">Julia Sprenger</a>
+                </p>
+
+                <hr>
+
+                <button class="btn btn-link btn-outline-primary font-weight-bold" data-toggle="collapse" href="#collapse_project6" role="button" aria-controls="collapse_project6"><h4>Description</h3></button>
+
+                <section class="collapse" id="collapse_project6">
+                  We are doing Spiking Neural Networks of the primary visual cortex designed to help us better understand visual computations using Spatio-temporal Diffusion Kernels and Traveling Waves. We are using neural simulators using classical pipelines (pyNN AND (Nest OR SpiNNaker) ), but for which we wish to optimize the different steps:
+
+                  <ol>
+                    <li>setting up the network</li>
+                    <li>running the simulation</li>
+                    <li>analyzing the results</li>
+                  </ol>
+
+                  We wish to go beyond the classical strategy ("yet another model") but to understand "why" such a given network would be a good descriptor of neural computations (for a context, see this <a href="https://arxiv.org/ftp/arxiv/papers/2004/2004.07580.pdf">preprint</a>). With such an efficient simulation pipeline, we would like in the future to "close the loop" and explore the space of all network configurations, in normal as well as pathological conditions.
+                  <br>
+                  <br>Ressources :
+                  <ul>
+                    <li><a href="https://github.com/NeuralEnsemble/PyNN">https://github.com/NeuralEnsemble/PyNN</a></li>
+                    <li><a href="https://github.com/nest/nest-simulator">https://github.com/nest/nest-simulator</a></li>
+                    <li><a href="http://spinnakermanchester.github.io/">http://spinnakermanchester.github.io/</a></li>
+                  </ul>
+                  <b>Goals for Brainhack Marseille</b>
+                  <ul>
+                    <li>Working goals : handle the interface between simulations blocks (network building, running simulations, results analysis)</li>
+                    <li>Perspective goal : thinking about closing the loop by optimizing the network structure based on the output of the analysis.</li>
+                  </ul>
+                </section>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col" data-aos="fade-left" data-aos-delay="100">
+              <h4>Required skills</h4>
+              Skills with standard scientific python librairies are required
+            </div>
+          </div>
+
+          <div class="row justify-content-center mt-4">
+
+              <div class="progress">
+                <div class="progress-bar bg-info font-weight-bold" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                  Python 100%
+                </div>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar bg-success font-weight-bold" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                  NumPy 80%
+                </div>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar bg-danger font-weight-bold" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                  PyNN 40%
+                </div>
+              </div>
+
+    <!--             <div class="progress">
+                <div class="progress-bar bg-warning font-weight-bold" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                  Python/Javascript 20%
+                </div>
+              </div> -->
+
+          </div>
+          <hr style="height:20px">
+        <!-- =========================== -->
 
     </section>
 
