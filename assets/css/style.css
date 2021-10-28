@@ -1932,9 +1932,97 @@ section {
 /*--------------------------------------------------------------
 # BG
 --------------------------------------------------------------*/
-.BG {
-  /*background:gray;*/
-  width: 200px;
-  height: 200px;
-  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>❤️</text></svg>") 16 0,auto; /*!emojicursor.app*/
+.team .memberBG {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.5s;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>❤️</text></svg>") 16 0,auto;
+}
+
+.team .memberBG .pic {
+  overflow: hidden;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.team .memberBG .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.team .memberBG:hover {
+  transform: translateY(-10px);
+}
+
+.team .memberBG .member-info {
+  padding-left: 30px;
+}
+
+.team .memberBG h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #0098D5;
+}
+
+.team .memberBG span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.team .memberBG span::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.team .memberBG p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.team .memberBG .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team .memberBG .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+}
+
+.team .memberBG .social a i {
+  color: #0098D5;
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.team .memberBG .social a:hover {
+  background: #47b2e4;
+}
+
+.team .memberBG .social a:hover i {
+  color: #fff;
+}
+
+.team .memberBG .social a + a {
+  margin-left: 8px;
 }
