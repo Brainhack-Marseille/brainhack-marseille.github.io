@@ -1,8 +1,8 @@
 ---
-name: Brainhack Project Template
-about: Template to propose a project for Brainhack Marseille
+name: Brainhack Project Template 2020
+about: Template to propose a project for Brainhack Marseille 2020
 title: ''
-labels: Brainhack project
+labels: ''
 assignees: ''
 
 ---

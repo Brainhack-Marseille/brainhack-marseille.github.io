@@ -1,15 +1,15 @@
 ---
-name: Brainhack Project Template
-about: Template to propose a project for Brainhack Marseille
+name: Brainhack Project Template 2021
+about: Template to propose a project for Brainhack Marseille 2021
 title: ''
-labels: Brainhack project
+labels: ''
 assignees: ''
 
 ---
 
 <!-- Guidelines
 
-We are very excited to meet you at the 2020 Brainhack Marseille 🎉 To submit a project, you need to be an attendee of the 2020 Brainhack Marseille. We ask you to register first over here. Thank you!
+We are very excited to meet you at the 2021 Brainhack Marseille 🎉 To submit a project, you need to be an attendee of the 2021 Brainhack Marseille. We ask you to register first over here. Thank you!
 
 We have prepared a checklist to help with your project submission. Here is how to proceed:
 
