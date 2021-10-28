@@ -1,8 +1,8 @@
 ---
-name: Brainhack Project Template
-about: Template to propose a project for Brainhack Marseille
+name: Brainhack Project Template 2020
+about: Template to propose a project for Brainhack Marseille 2020
 title: ''
-labels: Brainhack project
+labels: ''
 assignees: ''
 
 ---
@@ -53,4 +53,4 @@ Here you can include the link to the project or links to useful resources that w
 
 - [ ] Goals for the Brainhack: describe what you want to achieve during this brainhack. 
 
-- [ ] Skills: list skills that would be particularly suitable for your project (coding and non-coding). 
+- [ ] Skills: list skills that would be particularly suitable for your project (coding and non-coding).
