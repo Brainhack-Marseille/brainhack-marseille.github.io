@@ -206,7 +206,7 @@ var img = document.getElementById("mrs_bb"),
 img.onclick = function() {
   count += 1;
   if (count==13) {
-    window.open("https://youtu.be/-CVn3-3g_BI?t=51");
+    window.open("https://youtu.be/dQw4w9WgXcQ?&autoplay=1");
   }
 };
 
