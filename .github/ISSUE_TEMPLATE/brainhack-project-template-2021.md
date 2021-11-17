@@ -26,7 +26,7 @@ After this step (issue submition), we will assign a 'project monitor' to follow 
 <!-- Add a title that reflects what the code (or content) will do in a way that makes sense to newcomers who want to contribute to your project. -->
 
 **Project lead and collaborators:**
-<!-- Add surname and name of each person involved into the project. If you want you can indicate who's the project lead. -->
+<!-- Add surname and name of each person involved into the project. If you want you can indicate who's the project lead. You can also provide your name on twitter.-->
 
 **Description:**
 <!-- Add a brief description of the project. Try to include all the relevant information to answer the following questions: 
