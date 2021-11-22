@@ -301,9 +301,9 @@
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
- <!--            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <!-- <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="6"></li> -->
@@ -313,7 +313,7 @@
             <!-- PROJECT 1 : EyetrackPrep -->
             <div class="carousel-item active">
               <a class="scrollto active" href="#project1">
-                <img class="mx-auto d-block w-50" src="images/projects/eyetrack.png" alt="First slide">
+                <img class="mx-auto d-block w-50" src="images/projects/project1.png" alt="First slide">
               </a>
               <div class="carousel-caption d-none d-md-block">
                 <a class="scrollto active" href="#project1">
@@ -323,31 +323,31 @@
               </div>
             </div>
 
-            <!-- PROJECT 2 : eCOBIDAS -->
-<!--             <div class="carousel-item">
+            <!-- PROJECT 2 : Coherence -->
+            <div class="carousel-item">
               <a class="scrollto active" href="#project2">
-                <img class="mx-auto d-block w-50" src="images/projects/project2.jpg" alt="Second slide">
+                <img class="mx-auto d-block w-50" src="images/projects/project2.png" alt="Second slide">
               </a>
               <div class="carousel-caption d-none d-md-block">
                 <a class="scrollto active" href="#project2">
-                  <h5>eCOBIDAS: a webApp to that writes your methods section for you</h5>
+                  <h5>Single-trial time-resolved spectral connectivity in Frites</h5>
                 </a>
-                <p>by Rémi Gau</p>
+                <p>by Vinicius Lima & Etienne Combrisson</p>
               </div>
-            </div> -->
+            </div>
 
-            <!-- PROJECT 3 : DIGital Lab Book -->
-<!--             <div class="carousel-item">
+            <!-- PROJECT 3 : BIDS-ephys -->
+            <div class="carousel-item">
               <a class="scrollto active" href="#project3">
                 <img class="mx-auto d-block w-50" src="images/projects/project3.png" alt="Third slide">
               </a>
               <div class="carousel-caption d-none d-md-block">
                 <a class="scrollto active" href="#project3">
-                  <h5>DIGLaB : DIGital Lab Book</h5>
+                  <h5>BIDS-ephys</h5>
                 </a>
-                <p>by Fred Barthelemy, Sylvain Takerkart, Julia Sprenger</p>
+                <p>by Sylvain Takerkart & Julia Sprenger</p>
               </div>
-            </div> -->
+            </div>
 
             <!-- PROJECT 4 : macapype -->
 <!--             <div class="carousel-item">
@@ -434,7 +434,7 @@
       </a>
 
           <div class="col-lg-4 col-md-5 col-sm-8 col-xs-1 col-md-2">
-            <img src="images/projects/eyetrack.png" class="img-fluid" alt="">
+            <img src="images/projects/project1.png" class="img-fluid" alt="">
           </div>
 
           <div class="col">
@@ -454,9 +454,9 @@
 
               <section class="collapse" id="collapse_project1">
                 This project aims at providing to the eye-tracking research community a standardized software allowing the automatic computation and quality check of eye-tracking data. This includes any records of eye position metrics such as fixation, eye movements (saccades, microsaccades, pursuit), blinks, and pupillometry.
-
+                <br>
                 EyeTrackPrep is meant in the future to be used by all researchers using eye-tracking data. It aims at simplifying and standardizing this domain to improve research reproducibility as well as the share of collected data.
-
+                <br>
                 Eye-tracking community lack such a tool even if a need for it is clear. Although this project might take time until a functional software is produced, it will modify for long term the way cognitive neuroscientists work and generate open science of high quality data akin what happened with the development of <a href="https://bids-apps.neuroimaging.io/apps/">BIDS-apps</a> from the neuroimaging community.
                 <br>
                 <br>The following points are going to be addressed in this project:
@@ -507,6 +507,175 @@
         </div>
         <hr style="height:20px">
     <!-- ============ End of Project1 =============== -->
+
+
+    <!-- ======= Project2 description bullet ======= -->
+      <a class="active" id="project2">
+        <div class="row justify-content-center align-items-center">
+      </a>
+
+          <div class="col-lg-4 col-md-5 col-sm-8 col-xs-1 col-md-2">
+            <img src="images/projects/project2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col">
+
+            <div class="container my-4">
+
+              <!-- <a id="project1"> -->
+              <h3>Integration of the single-trial time-resolved spectral connectivity (coherence; PLV) in Frites</h3>
+              <!-- </a> -->
+              <p>
+                by <a style="color: black" href="https://github.com/ViniciusLima94">Vinicius Lima</a> & Etienne Combrisson
+              </p>
+
+              <hr>
+
+              <button class="btn btn-link btn-outline-primary font-weight-bold" data-toggle="collapse" href="#collapse_project2" role="button" aria-controls="collapse_project2"><h4>Description</h3></button>
+
+              <section class="collapse" id="collapse_project2">
+                The synchronization of the activity from distinct brain areas has been proposed to be one of the mechanisms by which them integrate while processing similar inputs in order to exchange information or encode the stimulus (Buzsaki, G., 2006; Fries, P., 2015). 
+                Based on this hypothesis, the time-course of the functional connectivity (dFC) can be measured from brain signals using metrics that capture their phase-relation such as the cross-spectra, the phase-locking value (PLV), and the coherence (Bastos A.M., Schoffelen J.M. 2006). 
+                <br>
+                Additionally, apart from estimating those metrics in a time-resolved manner, in order to be able to relate the dynamics of the phase-coupling and task-related behavioral events, it is also relevant to assess the dFC at single-trial level, hence, avoiding averaging out non-phase-locked bursts of synchronization that are present in the dFC and may correspond to brain states relevant to determining, for instance, whether the information is being encoded during cognitive tasks by the coordinated activity of multiple cortical areas.
+                <br>
+                Currently, xfrites - the testing repository associated to <a href="https://brainets.github.io/frites/">Frites</a> - has a function that estimates dFC in terms of the aforementioned metrics.
+                For the present project, we aim to integrate it with <a href="https://brainets.github.io/frites/">Frites</a> and, more specifically, we aim to improve the documentation of the function, refine the current implementation and include code for unit testing. Other goals are to implement notebooks with examples that allow the user to have a better understanding of how to first, set the parameters to estimate the spectral connectivity and seconds, to interpret the metric's outcome, what are its advantages and drawbacks.
+                <br>
+                <b>Keywords:</b> communication through coherence; spectral analysis; wavelet coherence; dynamic functional connectivity.
+                <br>
+                <br>
+                The following points are going to be addressed in this project:
+                <ul>
+                  <li>Describe the methods to other participants</li>
+                  <li>Refine the method implementation to estimate spectral connectivity present in xfrites</li>
+                  <li>Create the documentation for the method</li>
+                  <li>Write smoke and functional unit tests</li>
+                  <li>Create examples illustrating the purpose of the single-trial coherence / PLV</li>
+                </ul>
+              </section>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col" data-aos="fade-left" data-aos-delay="100">
+            <h4>Required skills</h4>
+            This is a python project, the following skills are highly recommended:
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+
+            <div class="progress">
+              <div class="progress-bar bg-info font-weight-bold" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Python programming 80%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-success font-weight-bold" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Spectral analysis 50%
+              </div>
+            </div>
+
+<!--             <div class="progress">
+              <div class="progress-bar bg-danger font-weight-bold" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Skill 3 50%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-warning font-weight-bold" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Skill 4 20%
+              </div>
+            </div> -->
+
+        </div>
+        <hr style="height:20px">
+    <!-- ============ End of Project2 =============== -->
+
+
+    <!-- ======= Project3 description bullet ======= -->
+      <a class="active" id="project3">
+        <div class="row justify-content-center align-items-center">
+      </a>
+
+          <div class="col-lg-4 col-md-5 col-sm-8 col-xs-1 col-md-2">
+            <img src="images/projects/project3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col">
+
+            <div class="container my-4">
+
+              <!-- <a id="project1"> -->
+              <h3>BIDS-ephys: let's BIDSify your animal electrophysiology data</h3>
+              <!-- </a> -->
+              <p>
+                by <a style="color: black" href="https://github.com/SylvainTakerkart">Sylvain Takerkart</a> & Julia Sprenger (coordinators of the BIDS-extension proposal for animal electrophysiology)
+                <br>Other members of the INCF working group on Neuroscience Data Structure
+              </p>
+
+              <hr>
+
+              <button class="btn btn-link btn-outline-primary font-weight-bold" data-toggle="collapse" href="#collapse_project3" role="button" aria-controls="collapse_project3"><h4>Description</h3></button>
+
+              <section class="collapse" id="collapse_project3">
+                We are working on an extension proposal so that BIDS (a standardized data structure described <a href="https://bids.neuroimaging.io/">here</a>) can support electrophysiological data recorded in animal models. 
+                <br>
+                Our working document that describes the data organization for animal ephys data is available <a href="https://bids.neuroimaging.io/bep032">here</a>. It is now ready to be used, and we propose here that electrophysiologists can attempt applying this organization to their data, with the help of the community.
+                <br>
+                <br>
+                The following points are going to be addressed in this project:
+                <ul>
+                  <li>Have as many electrophysiologists as possible convert their data to the proposed BIDS-ephys organization</li>
+                  <li>Identify potential problems in the specifications, solve them</li>
+                  <li>Make progress on the tools required to facilitate this conversion (some of them being present <a href="https://github.com/INT-NIT/AnDO/">here</a></li>
+                </ul>
+              </section>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col" data-aos="fade-left" data-aos-delay="100">
+            <h4>Required skills</h4>
+            This is a python project, a mix of coding and non-coding skills are required:
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+
+            <div class="progress">
+              <div class="progress-bar bg-info font-weight-bold" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Expertise in electrophysiology 80%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-success font-weight-bold" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                BIDS enthusiasts / expert 70%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-danger font-weight-bold" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Python programming 60%
+              </div>
+            </div>
+
+<!--             <div class="progress">
+              <div class="progress-bar bg-warning font-weight-bold" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Skill 4 20%
+              </div>
+            </div> -->
+
+        </div>
+        <hr style="height:20px">
+    <!-- ============ End of Project3 =============== -->
 
     </section>
 
