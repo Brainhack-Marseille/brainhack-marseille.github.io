@@ -201,13 +201,13 @@
   });
 
 
-var img = document.getElementById("mrs_bb"),
-  count = 0;
-img.onclick = function() {
-  count += 1;
-  if (count==13) {
-    window.open("https://youtu.be/dQw4w9WgXcQ?&autoplay=1");
-  }
-};
+  var img = document.getElementById("mrs_bb"),
+    count = 0;
+  img.onclick = function() {
+    count += 1;
+    if (count==13) {
+      window.open("https://youtu.be/dQw4w9WgXcQ?&autoplay=1");
+    }
+  };
 
 })(jQuery);

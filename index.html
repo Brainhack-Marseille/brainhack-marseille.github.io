@@ -310,8 +310,8 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <!-- <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <!-- <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="6"></li> -->
           </ol>
           <div class="carousel-inner">
@@ -368,18 +368,18 @@
               </div>
             </div>
 
-            <!-- PROJECT 5 : DAX -->
-<!--             <div class="carousel-item">
+            <!-- PROJECT 5 : BeauGosse -->
+            <div class="carousel-item">
               <a class="scrollto active" href="#project5">
-                <img class="mx-auto d-block w-50" src="images/projects/project5.jpg" alt="Fifth slide">
+                <img class="mx-auto d-block w-50" src="images/projects/project5.png" alt="Fifth slide">
               </a>
               <div class="carousel-caption d-none d-md-block">
                 <a class="scrollto active" href="#project5">
-                  <h5>Integration of DAX pipeline with XNAT</h5>
+                  <h5>Digging Higher-Order Interactions</h5>
                 </a>
-                <p>by Dipankar Bachar, David Meunier & Aissam Rahmani</p>
+                <p>by Etienne Combrisson, Andrea Brovelli & Daniele Marinazzo</p>
               </div>
-            </div> -->
+            </div>
 
             <!-- PROJECT 6 : Slam -->
 <!--             <div class="carousel-item">
@@ -762,6 +762,99 @@
         </div>
         <hr style="height:20px">
     <!-- ============ End of Project4 =============== -->
+
+
+    <!-- ======= Project5 description bullet ======= -->
+      <a class="active" id="project5">
+        <div class="row justify-content-center align-items-center">
+      </a>
+
+          <div class="col-lg-4 col-md-5 col-sm-8 col-xs-1 col-md-2">
+            <img src="images/projects/project5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col">
+
+            <div class="container my-4">
+
+              <!-- <a id="project1"> -->
+              <h3>Going beyond pairwise interactions by digging into Higher-Order Interactions</h3>
+              <!-- </a> -->
+              <p>
+                by <a style="color: black" href="https://github.com/EtienneCmb">Etienne Combrisson</a>, <a href="https://github.com/brovelli">Andrea Brovelli</a> & <a href="https://github.com/danielemarinazzo">Daniele Marinazzo</a>
+              </p>
+
+              <hr>
+
+              <button class="btn btn-link btn-outline-primary font-weight-bold" data-toggle="collapse" href="#collapse_project5" role="button" aria-controls="collapse_project5"><h4>Description</h3></button>
+
+              <section class="collapse" id="collapse_project5">
+                Modern theories suggest that cognitive functions emerge from the dynamic coordination of neural activity over large-scale and hierarchical networks. Currently, the characterization of a network and therefore, the functional interactions between brain regions, is usually performed using metrics of Functional Connectivity (FC). FC analysis is mostly based on the quantification of statistical relations between pairs of brain regions. However, pairwise interactions are probably insufficient to explain the emergence of more complex brain network interactions, such as during goal-directed learning tasks. Here, we propose to move beyond pairwise interactions by studying at Higher Order Interactions (HOI) i.e. quantifying the information carried by groups of "over-two" brain regions (= multiplets). As a first step, a framework called <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.100.032305">O-information</a> (= Information about Organizational structure) was recently proposed to characterize redundancy- and synergy-dominated systems. This framework has recently been extended with the dOinfo (= dynamic Information about Organizational structure) to quantify how multiplets of variables carry information about the future of the dynamical system they belong to. This <a href="https://www.frontiersin.org/articles/10.3389/fphys.2020.595736/full">dOinfo</a> extension allows to separate multiplets of variables which influence synergistically the future of the system from redundant multiplets.
+                <br>
+                Since (d)OInfo frameworks are recent, the math underneath are quite new and we are not necessary familiar with it. The overall goal of this project is to understand the methods by looking at the reference papers and the Python / Matlab implementations of both (d)OInfo.
+                <br>
+                <br>
+                The following points are going to be addressed in this project:
+                <ul>
+                  <li>Go through the reference papers (i.e. <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.100.032305">Rosas et al. 2019</a> and <a href="https://www.frontiersin.org/articles/10.3389/fphys.2020.595736/full">Stramaglia et al. 2021</a>) to build an intuition of the math undergoing the HOI</li>
+                  <li>Go through the Python toolbox <a href="https://github.com/PranavMahajan25/HOI_toolbox">HOI_toolbox</a> to understand what are the input / output types, to identify the main accessible functions such as understanding the internals</li>
+                  <li>Make the package easy to install, probably clean up so files</li>
+                  <li>Identify whether there are coding bottlenecks that could be easily solved to speed up computations (soft Numba, multi-core, tensor-computations etc.)</li>
+                </ul>
+                If we still have time, here are some new features that could be added to the Python toolbox:
+                <ul>
+                  <li>Implementation of false discovery rate for the significance of the multiplets</li>
+                  <li>Speed up of the bootstrap</li>
+                  <li>Include some plotting functions</li>
+                </ul>
+              </section>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col" data-aos="fade-left" data-aos-delay="100">
+            <h4>Required skills</h4>
+            This project requires a mix of coding and non-coding skills:
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+
+            <div class="progress">
+              <div class="progress-bar bg-info font-weight-bold" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Computational Neuroscience 70%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-success font-weight-bold" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Python programming 70%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-danger font-weight-bold" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Information theory 60%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-warning font-weight-bold" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Mathematics 50%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-info font-weight-bold" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Matlab 30%
+              </div>
+            </div>
+
+        </div>
+        <hr style="height:20px">
+    <!-- ============ End of Project5 =============== -->
 
     </section>
 
