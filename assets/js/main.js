@@ -210,4 +210,31 @@
     }
   };
 
+var aud = document.getElementById("aud");
+var alpr = document.getElementById("alpr");
+alpr.addEventListener("mouseover", function( event ) {  
+  // var aud = document.getElementById("aud");
+  aud.play();
+  setTimeout(function() {
+    alpr.style.backgroundColor = 'black';
+    alpr.style.color = 'orange';
+  }, 8000);
+  setTimeout(function() {
+    alpr.style.backgroundColor = 'white';
+    alpr.style.color = '#0098D5';
+  }, 11000);
+}, false);
+alpr.addEventListener("mouseout", function( event ) {   
+  // var aud = document.getElementById("aud");
+  aud.pause();
+  aud.currentTime = 0;
+  alpr.style.backgroundColor = 'white';
+  alpr.style.color = '#0098D5';
+    setTimeout(function() {
+    alpr.style.backgroundColor = 'white';
+    alpr.style.color = '#0098D5';
+  }, 8000);
+}, false);
+
+
 })(jQuery);

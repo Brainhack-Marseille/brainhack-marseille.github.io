@@ -311,8 +311,8 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            <!-- <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li> -->
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <!-- <li data-target="#carouselExampleIndicators" data-slide-to="6"></li> -->
           </ol>
           <div class="carousel-inner">
 
@@ -382,17 +382,17 @@
             </div>
 
             <!-- PROJECT 6 : Slam -->
-<!--             <div class="carousel-item">
+            <div class="carousel-item">
               <a class="scrollto active" href="#project6">
-                <img class="mx-auto d-block w-50" src="images/projects/project6.jpg" alt="Sixth slide">
+                <img class="mx-auto d-block w-50" src="images/projects/project6.png" alt="Sixth slide">
               </a>
               <div class="carousel-caption d-none d-md-block">
                 <a class="scrollto active" href="#project6">
-                  <h5>Development of the SLAM -Surface anaLysis And Modeling- python package</h5>
+                  <h5>Macapype</h5>
                 </a>
-                <p>by Guillaume Auzias & the MeCA team</p>
+                <p>by David Meunier, Kepkee Loh, Julien Sein, Bastien Cagna & Olivier Coulon</p>
               </div>
-            </div> -->
+            </div>
 
             <!-- PROJECT 7 : Slam -->
 <!--             <div class="carousel-item">
@@ -856,6 +856,87 @@
         <hr style="height:20px">
     <!-- ============ End of Project5 =============== -->
 
+
+    <!-- ======= Project6 description bullet ======= -->
+      <a class="active" id="project6">
+        <div class="row justify-content-center align-items-center">
+      </a>
+
+          <div class="col-lg-4 col-md-5 col-sm-8 col-xs-1 col-md-2">
+            <img src="images/projects/project6.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col">
+
+            <div class="container my-4">
+
+              <!-- <a id="project1"> -->
+              <h3>Going beyond pairwise interactions by digging into Higher-Order Interactions</h3>
+              <!-- </a> -->
+              <p>
+                by <a style="color: black" href="https://github.com/davidmeunier79">David Meunier</a>, Kepkee Loh, Julien Sein, Bastien Cagna & Olivier Coulon
+              </p>
+
+              <hr>
+
+              <button class="btn btn-link btn-outline-primary font-weight-bold" data-toggle="collapse" href="#collapse_project6" role="button" aria-controls="collapse_project6"><h4>Description</h3></button>
+
+              <section class="collapse" id="collapse_project6">
+                Macapype is a python package based on nipype, wrapping the tools required for NHP MRI anatomical segmentation. Macapype provide several processing pipelines, allowing optimisation and adaptation, depending on the quality of the images (SNR), acquisition sequences and antenna types, as well as species.
+                <br>
+                Today, macapype is provided as a github repo, a pip install, and a docker/singularity image. The accepted inputs have to be in BIDS format, and macapype pipelines are callable thanks to a command line interface (CLI).
+                <br>
+                <b>Links</b>
+                <ul>
+                  <li><a href="https://github.com/Macatools/macapype">Macapype Github</a></li>
+                  <li><a href="https://macatools.github.io/macapype/index.html">Macapype Documentation</a></li>
+                </ul>
+                <br>
+                The following points are going to be addressed in this project:
+                <br>
+                Macapype is mostly oriented to PNH anatomical segmentation. However, many applications can be included starting from a good segmentation quality :
+                <ul>
+                  <li>ACT (anatomically contrained tractography) from diffusion data</li>
+                  <li>Mesh and surfaces generation that are not pure PNH but that are useful to be linked to macapype segementation</li>
+                </ul>
+                We would like to discuss the possibility of integration o this tools as external pipelines, i.e. not directly part of macapype, but that can be added in global workflows based on nipype.
+              </section>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col" data-aos="fade-left" data-aos-delay="100">
+            <h4>Required skills</h4>
+            This is a Python project, coding skills and imaging knowledge are required:
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+
+            <div class="progress">
+              <div class="progress-bar bg-info font-weight-bold" role="progressbar" style="width: 85%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Python programming 85%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-success font-weight-bold" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                PNH anatomical MRI processing 75%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-danger font-weight-bold" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Nipype 75%
+              </div>
+            </div>
+
+        </div>
+        <hr style="height:20px">
+    <!-- ============ End of Project6 =============== -->
+
     </section>
 
 
@@ -930,10 +1011,11 @@
           </div>
 
           <div class="col-lg-4 mt-4">
+            <audio id="aud"  preload="auto" src="assets/.audio/.ap.ogg"></audio>
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
               <div class="pic"><img src="images/team/DrPron.png" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Alexandre Pron</h4>
+                <h4 id="alpr">Alexandre Pron</h4>
                 <span></span>
                 <p>Research Engineer</p>
               </div>
