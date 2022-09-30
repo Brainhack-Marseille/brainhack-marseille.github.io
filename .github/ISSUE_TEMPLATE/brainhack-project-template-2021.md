@@ -23,22 +23,23 @@ After this step (issue submition), we will assign a 'project monitor' to follow 
 ## Project info
 
 **Title:**
-<!-- Add a title that reflects what the code (or content) will do in a way that makes sense to newcomers who want to contribute to your project. -->
+<!-- Add a title that reflects what the content and topic will be about in a way that makes sense to newcomers who want to contribute to your project. -->
 
 **Project lead and collaborators:**
-<!-- Add surname and name of each person involved into the project. If you want you can indicate who's the project lead. You can also provide your name on twitter.-->
+<!-- Add surname and name of each person involved in the project. If you want you can indicate who's the project lead. You can also provide your name on twitter.-->
 
 **Description:**
-<!-- Add a brief description of the project. Try to include all the relevant information to answer the following questions: 
+<!-- Add a brief description of the project (make it quite generic such that most people can understand). Try to include all the relevant information to answer the following questions: 
 What are you doing, for who, and why;
 What makes your project special and exciting;
-Here you can include the link to the project or links to useful resources that will be exploited by the users during the event. -->
+Here you can include the link to the project or links to useful knowledges and/or resources that will be exploited by the users during the event. -->
 
 **Goals for Brainhack Marseille**
-<!-- Here you should wrap in some bullet points which are the aims of the project that you want to achieve during this event. -->
+<!-- Here you should wrap in some bullet points which are the aims of the project that you want to achieve during this event.
+You can also add some milestones that will help to get an idea of the work planned (forseen advancement). -->
 
 **Skills:**
-<!-- Add a list of maximum four important skills needed to contribute to this project with the associated value of importance in percentage (e.g.: python 80%, c++ 50%, ...). Try to think of both coding and non-coding skills. This will help contributors to orient toward the most fitting project. -->
+<!-- Add a list of maximum four important skills needed to contribute to this project with the associated value of importance in percentage (e.g.: background in neuroscience, signal processing, image treatment, python 80%, c++ 50%, ...). Try to think of both coding and non-coding skills. This will help contributors to orient toward the most fitting project. -->
 
 **Striking Image**
 <!-- Upload an image related to your project. -->
