@@ -854,10 +854,21 @@ section {
   width: 800px;
 }
 
-.btn {
+.btn-descript {
   border: 2px solid #ff7f2b;
-  background-color: white;
+  border-radius: 15px;
+  background-color: #fff;
   color: #ff7f2b;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-descript:hover {
+  border: 2px solid #ff652b;
+  border-radius: 15px;
+  background-color: #ff990b;
+  color: #ff652b;
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
