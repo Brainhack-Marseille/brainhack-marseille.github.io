@@ -206,7 +206,7 @@
   img.onclick = function() {
     count += 1;
     if (count==13) {
-      window.open("https://youtu.be/dQw4w9WgXcQ?&autoplay=1");
+      window.open("https://theuselessweb.com/");
     }
   };
 
