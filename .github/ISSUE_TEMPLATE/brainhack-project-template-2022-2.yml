@@ -116,20 +116,6 @@ body:
 
   - type: textarea
     attributes:
-      label: Required skills in percentage
-      description:
-        "Indicate from two to four foundamental skills to participate 
-        to the project and their relative percentage of relevance"
-      placeholder: |
-        E.g.:
-        - python coding 90%
-        - sharing ideas 70%
-        - EEG 40%
-    validations:
-      required: true
-
-  - type: textarea
-    attributes:
       label: Goals for Brainhack Global
       description: Add a list of milestones or deliverables that you expect to
         achieve during the event.
@@ -164,7 +150,8 @@ body:
   - type: textarea
     attributes:
       label: Skills
-      description: Add a list of skills needed to contribute to this project.
+      description: Indicates two to four skills needed to contribute to this project 
+        and their relative percentage of relevance.
 
         Try to think of both coding and non-coding skills.
 
@@ -175,8 +162,10 @@ body:
         newcomers in your project to learn from each other and share the
         experiences.
       placeholder: |
-        - Python: advanced
-        - FSL: basics
+        E.g.:
+        - python coding: 90%
+        - sharing ideas: 60%
+        - EEG 30%
     validations:
       required: true
 
