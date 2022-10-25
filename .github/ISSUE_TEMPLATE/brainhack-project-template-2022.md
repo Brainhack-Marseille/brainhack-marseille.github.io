@@ -1,5 +1,5 @@
 ---
-name: Brainhack Project Template 2022
+name: Brainhack Project Template 2022 - OUTDATED
 about: Template to propose a project for Brainhack Marseille 2022
 title: ''
 labels: ''
