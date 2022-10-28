@@ -360,16 +360,16 @@
           </ol>
           <div class="carousel-inner">
 
-            <!-- PROJECT 1 : TEMPLATE -->
+            <!-- PROJECT 1 : Nipype -->
             <div class="carousel-item active">
               <a class="scrollto active" href="#project1">
-                <img class="mx-auto d-block w-50" src="images/projects/project_template.jpg" alt="First slide">
+                <img class="mx-auto d-block w-50" src="images/projects/project1.png" alt="First slide">
               </a>
               <div class="carousel-caption d-none d-md-block">
                 <a class="scrollto active" href="#project1">
-                  <h5>How-does-this-work?</h5>
+                  <h5>Automatise your processing pipelines with nipype / pydra</h5>
                 </a>
-                <p>by People that are curious, motivated and friendly</p>
+                <p>by David Meunier</p>
               </div>
             </div>
 
@@ -407,7 +407,7 @@
       </a>
 
           <div class="col-lg-4 col-md-5 col-sm-8 col-xs-1 col-md-2">
-            <img src="images/projects/project_template.jpg" class="img-fluid" alt="">
+            <img src="images/projects/project1.png" class="img-fluid" alt="">
           </div>
 
           <div class="col">
@@ -415,10 +415,10 @@
             <div class="container my-4">
 
               <!-- <a id="project1"> -->
-              <h3>How-does-this-work?: This is a template to illustrate how a BrainHack project is presented</h3>
+              <h3>Automatise your processing pipelines with nipype / pydra</h3>
               <!-- </a> -->
               <p>
-                by People that are curious, motivated and friendly
+                by <a href="https://twitter.com/DavidM0579" target="_blank">David Meunier</a>
               </p>
 
               <hr>
@@ -426,17 +426,24 @@
               <button class="btn-descript btn-link font-weight-bold" data-toggle="collapse" href="#collapse_project1" role="button" aria-controls="collapse_project1"><h4>Description</h3></button>
 
               <section class="collapse" id="collapse_project1">
-                This project aims at bringing together students and scientists aiming at understanding the brain.
+                Neuroimaging and electrophysiology processing requires many steps, calling different softwares, possibly in different languages (typically, matlab batches or shell scripts).
                 <br>
-                How cognition is articulated in the brain is one of the most challenging research topic. When conduting research project a cross-disciplinary approach is often more likely to achieve significant progress.
+                <a href="https://github.com/nipy/nipype" target="_blank">Nipype</a> has provided an integrative solution, with a sufficient level of complexity to cover most of the needs for writting pipelines in neuroimaging. It is based on the notion workflows, being an orderd succession of nodes, linking inputs and outputs. Nodes can be user-written function (in python), interfaces with existing softwares (e.g. FSL, AFNI or SPM), or even other user-defined sub-workflows.
                 <br>
-                The spirit of BrainHack is to bring together participants with different skills that will be helpful for a given research project. The share interest and motivation are the main ingredient to work within a collective intelligence perspective.
+                Nipype is at the base of many widely used docker images, such as fmriprep and qsiprep. And has been extendend for other applications, such as EEG/MEG processing (ephypype), graph analysis in functional connectivity (graphpype) or non-human primate anatomical MRI segmentation (macapype).
                 <br>
-                <br>The following points are going to be addressed in this project:
+                Nipype has now achieved a degree of maturity to have become predominant in the community. But some of the limitations still prevails. It has decided in the last years to rewrite the core engine of nipype, to incorporate new functionnalities, such as runnnig containers as one node. The new implementation will be called <a href="https://github.com/nipype/pydra" target="_blank">pydra</a>, and also still in its infancy, we expect it to become a major standard in the community.
+                <br>
+                <br>In this project, we propose:
                 <ul>
-                  <li>Discussions about the milestones and presentation of the methods used</li>
-                  <li>Modeling for sanity check</li>
-                  <li>Visualization for data quality check</li>
+                  <li>To give an overview of how nipype works</li>
+                  <li>To advise you if it is useful for your typical processing</li>
+                  <li>To help writting specific nodes or workflows dedicated to your processing</li>
+                </ul>
+                <br>For advaced users, We also propose:
+                <ul>
+                  <li>To explain the advances of pydra compaired to nipype</li>
+                  <li>To write some tools existing in nipype in pydra</li>
                 </ul>
               </section>
 
@@ -455,31 +462,25 @@
 
             <div class="progress">
               <div class="progress-bar bg-info font-weight-bold" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                Knowledge in cognitive neuroscience 100%
+                Neuroimaging/electrophysiology processing 100%
               </div>
             </div>
 
             <div class="progress">
-              <div class="progress-bar bg-success font-weight-bold" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                Motivation 100%
+              <div class="progress-bar bg-success font-weight-bold" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Shell Script / Matlab Batch 75%
               </div>
             </div>            
 
             <div class="progress">
-              <div class="progress-bar bg-danger font-weight-bold" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                Brain imaging data processing 75%
+              <div class="progress-bar bg-danger font-weight-bold" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Python 50%
               </div>
             </div>
 
             <div class="progress">
-              <div class="progress-bar bg-warning font-weight-bold" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                Programming 50%
-              </div>
-            </div>
-
-            <div class="progress">
-              <div class="progress-bar font-weight-bold" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                Data visualization 50%
+              <div class="progress-bar bg-warning font-weight-bold" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Nipype 25%
               </div>
             </div>
 
