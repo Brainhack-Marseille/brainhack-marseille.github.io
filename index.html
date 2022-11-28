@@ -379,6 +379,7 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
           </ol>
           <div class="carousel-inner">
 
@@ -538,7 +539,7 @@
               </div>
             </div>
 
-            <!-- PROJECT 13 : BH -->
+            <!-- PROJECT 13 : Sulci -->
             <div class="carousel-item">
               <a class="scrollto active" href="#project13">
                 <img class="mx-auto d-block w-50" src="images/projects/project13.png" alt="First slide">
@@ -548,6 +549,19 @@
                   <h5>Sulcilab: A collaborative sulci labelling web app</h5>
                 </a>
                 <p>by Bastien Cagna</p>
+              </div>
+            </div>
+
+            <!-- PROJECT 14 : Pink Noise -->
+            <div class="carousel-item">
+              <a class="scrollto active" href="#project14">
+                <img class="mx-auto d-block w-50" src="images/projects/project14.png" alt="First slide">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <a class="scrollto active" href="#project14">
+                  <h5>Removing pink noise (1/f) in LFP across different electrophysiological recording systems</h5>
+                </a>
+                <p>by Laura López Galdo</p>
               </div>
             </div>
 
@@ -1609,7 +1623,89 @@
 
         </div>
         <hr style="height:20px">
-    <!-- ============ End of Project12 =============== -->
+    <!-- ============ End of Project13 =============== -->
+
+    <!-- ======= Project14 description bullet ======= -->
+      <a class="active" id="project14">
+        <div class="row justify-content-center align-items-center">
+      </a>
+
+          <div class="col-lg-4 col-md-5 col-sm-8 col-xs-1 col-md-2">
+            <img src="images/projects/project14.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col">
+
+            <div class="container my-4">
+
+              <!-- <a id="project1"> -->
+              <h3>Removing pink noise (1/f) in LFP across different electrophysiological recording systems</h3>
+              <!-- </a> -->
+              <p>
+                by <a href="https://github.com/lauralopezgaldo" target="_blank">Laura López Galdo</a>, Shrabasti Jana, Camila Losada, Hasnae Agouram, Cléo Schoeffel & Nilanjana Nandi
+              </p>
+
+              <hr>
+
+              <button class="btn-descript btn-link font-weight-bold" data-toggle="collapse" href="#collapse_project14" role="button" aria-controls="collapse_project14"><h4>Description</h3></button>
+
+              <section class="collapse" id="collapse_project14">
+              <br>
+              Sulcilab is a web base application to mannually labelize sulcal graphs (outputs of BrainVISA).
+              <br>
+              We will try to remove the aperiodic noise found in the spectrum of the LFP data using the fooof module (https://github.com/fooof-tools/fooof). We will parametrize our signals, the aperiodic and periodic components and make some comparison across the different frequency bands.
+              <br>
+              We have data from EEG human recordings, LFP monkey utah array recordings and monkey laminar intracranial recordings across different areas. We want to see the effect of pink noise in each of the different setups and try to clean the signal.
+              <br>
+              Some related literature can be found in the following links:
+              <ul>
+              <li><a href="https://doi.org/10.1038/s41593-020-00744-x" target="_blank">Parametrizing aperiodic component</a></li>
+              <li><a href="www.pnas.org/cgi/doi/10.1073/pnas.1710323115 and 10.1162/jocn_a_01600" target="_blank">Gamma-Beta frequency interactions</a></li> 
+              </ul>
+
+              </section>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col" data-aos="fade-left" data-aos-delay="100">
+            <h4>Required skills</h4>
+            This is a multimodal project, a mix of coding and non-coding skills are required:
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+
+            <div class="progress">
+              <div class="progress-bar bg-info font-weight-bold" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Electrophysiological data 100%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-danger font-weight-bold" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Python 70%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-warning font-weight-bold" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                Sharing ideas 60%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar bg-success font-weight-bold" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                literature review 30%
+              </div>
+            </div>
+
+
+        </div>
+        <hr style="height:20px">
+    <!-- ============ End of Project13 =============== -->
 
     </section>
 
