@@ -981,7 +981,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(255, 151, 92, 0.4), rgba(255, 151, 92, 0.6)), url(../../images/calanques.jpg) fixed center center;
+  background: linear-gradient(rgba(116, 255, 92, 0.4), rgba(116, 255, 92, 0.6)), url(../../images/calanques.jpg) fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
