@@ -15,18 +15,30 @@ body:
     attributes:
       value: |
         ## Guidelines
+
         We are very excited to meet you at Brainhack Global 2023 🎉.
+
         To submit a project:
+
         - register to the most suitable [Brainhack Global 2023 events](https://brainhack.org/global2023/events/) for your location, time zone, interest...
+
         - make sure you have read our **[Guidelines for Leading and Attending to Brainhack Projects](https://github.com/brainhackorg/bhg-event-materials/blob/master/docs/leading_and_attending_to_brainhack_projects.md)** to increase the diversity and inclusivity of your project work
+
         - fill in all the required items (marked with a red asterisk `*`) in the form below. Note that if you are missing some information but still want to submit a project, you can always input dummy content.
+
         - click on `Submit new issue` at the bottom of the form
+
         - add a comment saying:
         > Hi @brainhackorg/project-monitors my project is ready!
+
         After the issue is submitted, we will assign a `project monitor` to review your submission.
+
         After approval we will add the label `status:web_ready` and your project will appear on [our Projects page](https://brainhack.org/global2023/projects).
+
         Note that you can always update your issue after clicking on `Submit new issue`. This will also change your page on the website accordingly.
+
         If at any time you need help from us or anything is unclear, please ping the project monitors (`@brainhackorg/project-monitors`) in a comment. Our team is here to help!
+
   # ----------------------------------------------------------------------------
   # PROJECT INFO
   # ----------------------------------------------------------------------------
@@ -35,6 +47,7 @@ body:
     attributes:
       value: |
         ## Project info
+
   # ----------------------------------------------------------------------------
   # required
   # ----------------------------------------------------------------------------
@@ -120,6 +133,7 @@ body:
         open source projects.
       value: |
         1. issue one:
+
         2. issue two:
     validations:
       required: true
@@ -230,7 +244,9 @@ body:
     attributes:
       value: |
         ## Project labels
+
         These labels can help match your project with the attendees' interests.
+
   - type: dropdown
     attributes:
       label: Type
@@ -396,6 +412,7 @@ body:
     attributes:
       value: |
         ## Submission checklist
+
   - type: checkboxes
     attributes:
       label: Things to do after the project is submitted and ready to review.
@@ -404,3 +421,4 @@ body:
             "Add a comment below the main post of your issue saying: `Hi
             @brainhackorg/project-monitors my project is ready!`"
         - label: Twitter-sized summary of your project pitch.
+
