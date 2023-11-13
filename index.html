@@ -42,7 +42,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html">BrainHack 2023</a></h1>
+      <h1 class="logo mr-auto"><a href="index.html">BrainHack Marseille</h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -65,19 +65,27 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="hero">
 
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Brainhack Marseille</h1>
-          <h2>4 - 6 December 2023</h2>
+      <div class="row justify-content-center">
+
+        <div class="col-sm-6 col-xs-6 col-md-6 countdown justify-content-center" data-count="2023/12/4">
+          <h1>4 - 6 December 2023</h1>
+            <div class="row">
+            <div class="column">
+               <h2>%d Days %h Hours %m Min %s Sec <br>
+          twinned with the <a href="https://brainhacklucca.github.io/index.html"> <font color="#00FF00"> Brainhack</font> <font color="white"> Lucca</font>  <font color="red"> (Italy)</font></a></h2>
+            </div>
+            <div class="column">
+              <img src="images/BHLucca.png" width="64">
+            </div>
+            </div>
         </div>
-        <div class="col-xl-5 col-xl-5 col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img id="mrs_bb" src="images/brainhack2023.png" alt="" class="img-fluid animated">
+        <div class="col-sm-6 col-xs-6 col-md-6">
+          <img id="mrs_bb" src="images/brainhack2023.png" width=480 alt="" class="img-fluid animated">
         </div>
-      </div>
-    </div>
+        <img src="images/marseille.png" alt="" data-aos="fade-in">
 
   </section><!-- End Hero -->
 
@@ -263,7 +271,6 @@
                 <ul>
                   <li>10h00-11h30 - <b>Python basic</b> <i> by Julien Caugant </i> </li>
                   <li>11h30-13h00 - <b>Jupyter notebook / IA tools for machine learning </b> <i> by <a href="https://www.univ-amu.fr/fr/public/cedre"> CEDRE </a> team </i> </li>
-
                 </ul>
               </td>
             </tr>
@@ -323,6 +330,7 @@
             <th scope="row" class="align-middle text-nowrap">13h00-14h00</th>
             <td class="table-danger"><b>Lunch Break</b></td>
           </tr>
+          <tr>
           <th scope="row" class="align-middle text-nowrap" style="width: 10%">14h00-18h00</th>
           <td class="table-primary"><b>Project Work</b>
               <ul>
@@ -330,7 +338,15 @@
                 <li>17h30-18h00 - <b>Open Science game</b> <i> Julien Caugant (Pouillon room) </i> </li>
               </ul>
             </td>
-
+          </tr>
+          <tr>
+          <th scope="row" class="align-middle text-nowrap" style="width: 10%">18h00-19h00</th>
+            <td class="table-success"><b> Round table on <a href="https://pbil.univ-lyon1.fr/members/tannier/usageright/"> UsageRight in Scientific Research</a> </b>
+                <ul>
+                  <li>18h00-19h00 -<i> <a href="https://lbbe.univ-lyon1.fr/fr/annuaires-des-membres/tannier-eric"> Eric Tannier </i> </li>
+                </ul>
+            </td>
+          </tr>
         </tbody>
       </table>
 
@@ -1023,6 +1039,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Other JS File from Lucca website -->
+  <script src="assets/js/countdown.js"></script>
 
 </body>
 
