@@ -536,7 +536,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .img-fluid{
-  max-width: 130%;
+  max-width: 90%;
   height: auto;
 }
 
