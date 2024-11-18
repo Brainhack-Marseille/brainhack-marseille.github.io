@@ -879,10 +879,10 @@ section {
 }
 
 .btn-descript:hover {
-  border: 2px solid #62b538ff;
+  border: 2px solid #ffffff;
   border-radius: 15px;
-  background-color: #048e16;
-  color: #62b538ff;
+  background-color: #264653;
+  color: #ffffff;
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
