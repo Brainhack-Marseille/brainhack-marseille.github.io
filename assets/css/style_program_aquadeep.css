@@ -1,0 +1,162 @@
+/* Program Section Styles */
+.program .section-title p {
+  color: #666;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.program-day-title {
+  font-weight: 600;
+  /* border-bottom: 3px solid #e76f51; */
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.program-schedule {
+  margin-top: 30px;
+}
+
+.time-slot {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.time-slot:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.time-badge {
+  min-width: 120px;
+  background: linear-gradient(135deg, #264653 0%, #2a9d8f 100%);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  height: fit-content;
+  margin-right: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;  /* Add this to center within parent */
+}
+
+.event-content {
+  flex: 1;
+}
+
+.event-content h4 {
+  color: #264653;
+  margin-bottom: 0px !important;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* Add this for horizontal centering */
+  min-height: 40px;
+}
+
+.event-content .speaker,
+.event-content .location {
+  color: #666;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.event-content i {
+  margin-right: 5px;
+  color: #2a9d8f;
+}
+
+.lunch-break {
+  background: linear-gradient(135deg, #f4f4f4 0%, #e9ecef 100%);
+  border-left: 4px solid #e9c46a;
+}
+
+.lunch-break .time-badge {
+  background: linear-gradient(135deg, #e9c46a 0%, #f4a261 100%);
+}
+
+.social-event {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border-left: 4px solid #e76f51;
+}
+
+.social-event .time-badge {
+  background: linear-gradient(135deg, #e76f51 0%, #f4a261 100%);
+}
+
+.project-work {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  border-left: 4px solid #2a9d8f;
+}
+
+.project-work .time-badge {
+  background: linear-gradient(135deg, #2a9d8f 0%, #264653 100%);
+}
+
+/* Color coding for different session types */
+.beginner-path {
+  background: linear-gradient(135deg, #fff9e6 0%, #ffefc6 100%);
+  border-left: 4px solid #e9c46a;
+}
+
+.beginner-path .time-badge {
+  background: linear-gradient(135deg, #e9c46a 0%, #daa520 100%);
+}
+
+.advanced-path {
+  background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%);
+  border-left: 4px solid #2a9d8f;
+}
+
+.advanced-path .time-badge {
+  background: linear-gradient(135deg, #2a9d8f 0%, #1e8076 100%);
+}
+
+.software-path {
+  background: linear-gradient(135deg, #fff3e6 0%, #ffe4cc 100%);
+  border-left: 4px solid #f4a261;
+}
+
+.software-path .time-badge {
+  background: linear-gradient(135deg, #f4a261 0%, #e89350 100%);
+}
+
+.hardware-path {
+  background: linear-gradient(135deg, #ffe8e5 0%, #ffd4cc 100%);
+  border-left: 4px solid #e76f51;
+}
+
+.hardware-path .time-badge {
+  background: linear-gradient(135deg, #e76f51 0%, #d45640 100%);
+}
+
+.track-header h5 {
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .time-slot {
+    flex-direction: column;
+  }
+  
+  .time-badge {
+    margin-bottom: 15px;
+    margin-right: 0;
+    width: 100%;
+  }
+  
+  .event-content h4 {
+    font-size: 16px;
+  }
+}
