@@ -55,8 +55,8 @@
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="#coc">CoC</a></li>
           <li><a href="#register">Register</a></li>
-          <li><a href="#program">Program</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#program">Program</a></li>
           <li><a href="#team">Team</a></li>
           <!-- <li><a href="#social">Social network</a></li> -->
 
@@ -222,8 +222,7 @@
         <!-- <h6><i>Deadline is 25th November...</i></h6> -->
         <!-- </div> -->
         <div class="d-flex justify-content-center">
-          <H2> The registration deadline is <font color="#FF0000"> Wednesday 31st December</font>
-          </H2>
+          <H2> The registration deadline is <span class="deadline-highlight">Wednesday 31st December</span></H2>
           <!-- <H2> <b>Sorry :-( Registration is now <font color="#FF0000">CLOSED</font>.</b></H2> -->
         </div>
         <p align="center">
@@ -239,12 +238,97 @@
           To register to the event, please click on the button below to fill the form.
         </p>
 
-        <div class="d-flex justify-content-center">
-          <!-- <a class="btn btn-secondary" href="https://redcap.int.univ-amu.fr/surveys/?s=WWN874XPP3XJN7WE" title="Register now, and send the email!"><h4>REGISTER</h4></a> -->
-          <a class="btn btn-warning btn-color" href="https://redcap.int.univ-amu.fr/surveys/?s=WWN874XPP3XJN7WE"
-            title="Register now, and send the email!">
-            <h4>REGISTER</h4>
+        <div class="d-flex justify-content-center btn-brainhack-container">
+          <a class="btn-brainhack-primary btn-brainhack-pulse" 
+             href="https://redcap.int.univ-amu.fr/surveys/?s=WWN874XPP3XJN7WE"
+             title="Register now!">
+            <h4>REGISTER NOW</h4>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Projects Section (placeholder) ======= -->
+    <section id="projects" class="projects">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>Here you will find all the informations about the event projects.</br></br>
+            If you want to <b>submit a project</b> click on the button below, fill up the form, and submit the github
+            issue. Projects can be anything you'd like to work on during the event with other people (coding, discussing
+            a procedure with coworkers, brainstorming about a new idea), as long as you're ready to minimally organize
+            this!</p>
+        </div>
+        <div class="d-flex justify-content-center btn-brainhack-container">
+          <a class="btn-brainhack-primary btn-brainhack-pulse" 
+             href="https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/new?assignees=&labels=project&template=brainhack-project-template-2025-updated-BHM.yml"
+             target="_blank">
+            <h4>SUBMIT PROJECT</h4>
+          </a>
+        </div>
+        </br>
+        <div class="section-title">
+          <p class="projects-intro-text">
+            To have an idea of the projects submitted in previous editions, check out the following:
+          </p>
+        </div>
+        
+        <div class="project-links-container">
+          <div class="project-links-grid">
+            
+            <!-- 2024 Projects -->
+            <div class="project-link-card" data-aos="fade-up">
+              <div class="project-link-icon">
+                <i class="icofont-code-alt"></i>
+              </div>
+              <div class="project-year-badge">2024</div>
+              <div class="project-link-text">Brainhack Marseille</div>
+              <a href="BHM_2024/BHM_2024.html#projects" target="_blank" class="project-link-button">
+                View Projects
+              </a>
+            </div>
+        
+            <!-- 2023 Projects -->
+            <div class="project-link-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="project-link-icon">
+                <i class="icofont-code-alt"></i>
+              </div>
+              <div class="project-year-badge">2023</div>
+              <div class="project-link-text">Brainhack Marseille</div>
+              <a href="BHM_2023/BHM_2023.html#projects" target="_blank" class="project-link-button">
+                View Projects
+              </a>
+            </div>
+        
+            <!-- 2022 Projects -->
+            <div class="project-link-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-link-icon">
+                <i class="icofont-code-alt"></i>
+              </div>
+              <div class="project-year-badge">2022</div>
+              <div class="project-link-text">Brainhack Marseille</div>
+              <a href="BHM_2022/BHM_2022.html#projects" target="_blank" class="project-link-button">
+                View Projects
+              </a>
+            </div>
+        
+          </div>
+        
+          <!-- Contact Help Box -->
+          <div class="contact-help-box" data-aos="fade-up">
+            <h4><i class="icofont-question-circle"></i> Need Help With Your Project?</h4>
+            <p>We're here to assist you in framing and developing your project idea!</p>
+            <a href="mailto:brainhack.marseille@gmail.com" class="email-link">
+              <i class="icofont-envelope"></i>
+              <span>brainhack.marseille@gmail.com</span>
+            </a>
+          </div>
+        </div>
+        </br>
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <p><i>Submitted projects will appear here closer to the event.</i></p>
+          </div>
         </div>
       </div>
     </section>
@@ -280,7 +364,7 @@
               </h3>
 
               <div class="program-schedule">
-                <div class="time-slot" data-aos="fade-up">
+                <div class="time-slot general-path" data-aos="fade-up">
                   <div class="time-badge">9:00 - 10:00</div>
                   <div class="event-content">
                     <h4>Introduction to BrainHack Marseille 2026 and Welcome Breakfast!</h4>
@@ -346,14 +430,14 @@
                   </div>
                 </div>
 
-                <div class="time-slot" data-aos="fade-up">
+                <div class="time-slot general-path" data-aos="fade-up">
                   <div class="time-badge">13:00 - 14:30</div>
                   <div class="event-content">
                     <h4><i class="icofont-lunch"></i> Lunch Break and Collective Intelligence Workshop </h4>
                   </div>
                 </div>
 
-                <div class="time-slot" data-aos="fade-up">
+                <div class="time-slot social-event" data-aos="fade-up">
                   <div class="time-badge">14:30 - 15:00</div>
                   <div class="event-content">
                     <h4>Project Presentations</h4>
@@ -392,7 +476,7 @@
                   </div>
                 </div>
 
-                <div class="time-slot" data-aos="fade-up">
+                <div class="time-slot general-path" data-aos="fade-up">
                   <div class="time-badge">16:30 - 17:00</div>
                   <div class="event-content">
                       <h4><i class="icofont-coffee-cup"></i> Coffee Break</h4>
@@ -439,7 +523,7 @@
               </h3>
 
               <div class="program-schedule">
-                <div class="time-slot" data-aos="fade-up">
+                <div class="time-slot general-path" data-aos="fade-up">
                   <div class="time-badge">9:00 - 9:30</div>
                   <div class="event-content">
                     <h4>Welcome Breakfast</h4>
@@ -454,7 +538,7 @@
                   </div>
                 </div>
 
-                <div class="time-slot lunch-break" data-aos="fade-up">
+                <div class="time-slot general-path" data-aos="fade-up">
                   <div class="time-badge">13:00 - 14:00</div>
                   <div class="event-content">
                     <h4><i class="icofont-lunch"></i> Lunch Break</h4>
@@ -479,7 +563,7 @@
               </h3>
 
               <div class="program-schedule">
-                <div class="time-slot" data-aos="fade-up">
+                <div class="time-slot general-path" data-aos="fade-up">
                   <div class="time-badge">9:00 - 9:30</div>
                   <div class="event-content">
                     <h4>Welcome Breakfast</h4>
@@ -494,7 +578,7 @@
                   </div>
                 </div>
 
-                <div class="time-slot lunch-break" data-aos="fade-up">
+                <div class="time-slot general-path" data-aos="fade-up">
                   <div class="time-badge">13:00 - 14:00</div>
                   <div class="event-content">
                     <h4><i class="icofont-lunch"></i> Lunch Break</h4>
@@ -514,49 +598,6 @@
 
       </div>
     </section><!-- End Program Section -->
-
-    <!-- ======= Projects Section (placeholder) ======= -->
-    <section id="projects" class="projects">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Projects</h2>
-          <p>Here you will find all the informations about the event projects.</br></br>
-            If you want to <b>submit a project</b> click on the button below, fill up the form, and submit the github
-            issue. Projects can be anything you'd like to work on during the event with other people (coding, discussing
-            a procedure with coworkers, brainstorming about a new idea), as long as you're ready to minimally organize
-            this!</p>
-        </div>
-        <div class="d-flex justify-content-center">
-          <a class="btn btn-warning btn-color"
-            href="https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/new?assignees=&labels=project&template=brainhack-project-template-2025-updated-BHM.yml"
-            target="_blank">
-            <h4>SUBMIT PROJECT</h4>
-          </a>
-        </div>
-        </br>
-        <div class="section-title">
-          To have an idea of the projects submitted in previous editions, you can check the following links:</br>
-          <a href="BHM_2024/BHM_2024.html#projects" target="_blank">Brainhack Marseille 2024 Projects</a>
-          </br>
-          <a href="BHM_2023/BHM_2023.html#projects" target="_blank">Brainhack Marseille 2023 Projects</a>
-          </br>
-          <a href="BHM_2022/BHM_2022.html#projects" target="_blank">Brainhack Marseille 2022 Projects</a>
-          </br>
-          </br>
-          <p>
-            You can also contact us via email if you require assistance in framing your project:
-            </br>
-            <i>brainhack.marseille@gmail.com</i>
-          </p>
-        </div>
-        </br>
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <p><i>Submitted projects will appear here closer to the event.</i></p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- ======= Team Section (placeholder) ======= -->
     <section id="team" class="team section-bg">
@@ -691,6 +732,17 @@
             </div>
           </div>
 
+          <div class="col-lg-4 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="images/team/LouisClement.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Louis-Clément da Costa</h4>
+                <span></span>
+                <p>PhD student</p>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -748,18 +800,85 @@
 
     <!-- ======= Previous editions Section ======= -->
     <section id="prev_ed" class="previous">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Previous Editions</h2>
+          <p>Explore the history of BrainHack Marseille through our past events</p>
         </div>
-        <ul>
-          <li><a href="BHM_2024/BHM_2024.html" target="_blank">Brainhack Marseille 2024</a></li>
-          <li><a href="BHM_2023/BHM_2023.html" target="_blank">Brainhack Marseille 2023</a></li>
-          <li><a href="BHM_2022/BHM_2022.html" target="_blank">Brainhack Marseille 2022</a></li>
-          <li><a href="BHM_2021/BHM_2021.html" target="_blank">Brainhack Marseille 2021</a></li>
-          <li><a href="BHM_2020/BHM_2020.html" target="_blank">Brainhack Marseille 2020</a></li>
-          <li><a href="https://brainhack_marseille.frama.io/ref2019/" target="_blank">Brainhack Marseille 2019</a></li>
-        </ul>
+        
+        <div class="edition-cards-container">
+          <!-- 2024 Edition -->
+          <div class="edition-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="edition-icon">
+              <i class="icofont-brain-alt"></i>
+            </div>
+            <div class="edition-year">2024</div>
+            <div class="edition-title">Brainhack Marseille</div>
+            <a href="BHM_2024/BHM_2024.html" target="_blank" class="edition-link">
+              <span>View Edition <i class="icofont-arrow-right"></i></span>
+            </a>
+          </div>
+
+          <!-- 2023 Edition -->
+          <div class="edition-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="edition-icon">
+              <i class="icofont-brain-alt"></i>
+            </div>
+            <div class="edition-year">2023</div>
+            <div class="edition-title">Brainhack Marseille</div>
+            <a href="BHM_2023/BHM_2023.html" target="_blank" class="edition-link">
+              <span>View Edition <i class="icofont-arrow-right"></i></span>
+            </a>
+          </div>
+
+          <!-- 2022 Edition -->
+          <div class="edition-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="edition-icon">
+              <i class="icofont-brain-alt"></i>
+            </div>
+            <div class="edition-year">2022</div>
+            <div class="edition-title">Brainhack Marseille</div>
+            <a href="BHM_2022/BHM_2022.html" target="_blank" class="edition-link">
+              <span>View Edition <i class="icofont-arrow-right"></i></span>
+            </a>
+          </div>
+
+          <!-- 2021 Edition -->
+          <div class="edition-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="edition-icon">
+              <i class="icofont-brain-alt"></i>
+            </div>
+            <div class="edition-year">2021</div>
+            <div class="edition-title">Brainhack Marseille</div>
+            <a href="BHM_2021/BHM_2021.html" target="_blank" class="edition-link">
+              <span>View Edition <i class="icofont-arrow-right"></i></span>
+            </a>
+          </div>
+
+          <!-- 2020 Edition -->
+          <div class="edition-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="edition-icon">
+              <i class="icofont-brain-alt"></i>
+            </div>
+            <div class="edition-year">2020</div>
+            <div class="edition-title">Brainhack Marseille</div>
+            <a href="BHM_2020/BHM_2020.html" target="_blank" class="edition-link">
+              <span>View Edition <i class="icofont-arrow-right"></i></span>
+            </a>
+          </div>
+
+          <!-- 2019 Edition -->
+          <div class="edition-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="edition-icon">
+              <i class="icofont-brain-alt"></i>
+            </div>
+            <div class="edition-year">2019</div>
+            <div class="edition-title">Brainhack Marseille</div>
+            <a href="https://brainhack_marseille.frama.io/ref2019/" target="_blank" class="edition-link">
+              <span>View Edition <i class="icofont-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
       </div>
     </section><!-- End Previous editions Section -->
 
