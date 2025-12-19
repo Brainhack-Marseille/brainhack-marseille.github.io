@@ -5,7 +5,7 @@ name: Brainhack Marseille Project Template 2026
 
 description: Fill in this template to submit a project
 title: "[PROJECT PROPOSAL]"
-labels: ["project", "question"]
+labels: ["project"]
 assignees: Brainhack-Marseille
 
 # assignees:
@@ -32,7 +32,7 @@ body:
 
         After the issue is submitted, we will assign a `project monitor` to review your submission.
 
-        After approval we will add the label `status:web_ready` and your project will appear on [our Projects section](https://brainhack-marseille.github.io/).
+        After approval we will add the label `project:approved` and your project will appear on [our Projects section](https://brainhack-marseille.github.io/).
 
         Note that you can always update your issue after clicking on `Submit new issue`.
 

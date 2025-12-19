@@ -30,6 +30,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style_aquadeep.css" rel="stylesheet">
   <link href="assets/css/style_program_aquadeep.css" rel="stylesheet">
+  <!-- Project Cards Styling -->
+  <link href="assets/css/projects.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v2.2.1
@@ -239,43 +241,50 @@
         </p>
 
         <div class="d-flex justify-content-center btn-brainhack-container">
-          <a class="btn-brainhack-primary btn-brainhack-pulse" 
-             href="https://redcap.int.univ-amu.fr/surveys/?s=WWN874XPP3XJN7WE"
-             title="Register now!">
+          <a class="btn-brainhack-primary btn-brainhack-pulse"
+            href="https://redcap.int.univ-amu.fr/surveys/?s=WWN874XPP3XJN7WE" title="Register now!">
             <h4>REGISTER NOW</h4>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ======= Projects Section (placeholder) ======= -->
+    <!-- ======= Projects Section ======= -->
     <section id="projects" class="projects">
       <div class="container" data-aos="fade-up">
+
+        <!-- Section Title & Description (PRESERVED FROM 2026) -->
         <div class="section-title">
           <h2>Projects</h2>
-          <p>Here you will find all the informations about the event projects.</br></br>
+          <p>
+            <!-- Here you will find all the informations about the event projects.</br></br> -->
             If you want to <b>submit a project</b> click on the button below, fill up the form, and submit the github
             issue. Projects can be anything you'd like to work on during the event with other people (coding, discussing
             a procedure with coworkers, brainstorming about a new idea), as long as you're ready to minimally organize
             this!</p>
         </div>
+
+        <!-- Submit Button (PRESERVED FROM 2026) -->
         <div class="d-flex justify-content-center btn-brainhack-container">
-          <a class="btn-brainhack-primary btn-brainhack-pulse" 
-             href="https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/new?assignees=&labels=project&template=brainhack-project-template-2025-updated-BHM.yml"
-             target="_blank">
+          <a class="btn-brainhack-primary btn-brainhack-pulse"
+            href="https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/new?assignees=&labels=project&template=brainhack-project-template-2025-updated-BHM.yml"
+            target="_blank">
             <h4>SUBMIT PROJECT</h4>
           </a>
         </div>
         </br>
+
+        <!-- Previous Editions Intro (PRESERVED FROM 2026) -->
         <div class="section-title">
           <p class="projects-intro-text">
             To have an idea of the projects submitted in previous editions, check out the following:
           </p>
         </div>
-        
+
+        <!-- Previous Edition Cards (PRESERVED FROM 2026) -->
         <div class="project-links-container">
           <div class="project-links-grid">
-            
+
             <!-- 2024 Projects -->
             <div class="project-link-card" data-aos="fade-up">
               <div class="project-link-icon">
@@ -287,7 +296,7 @@
                 View Projects
               </a>
             </div>
-        
+
             <!-- 2023 Projects -->
             <div class="project-link-card" data-aos="fade-up" data-aos-delay="100">
               <div class="project-link-icon">
@@ -299,7 +308,7 @@
                 View Projects
               </a>
             </div>
-        
+
             <!-- 2022 Projects -->
             <div class="project-link-card" data-aos="fade-up" data-aos-delay="200">
               <div class="project-link-icon">
@@ -311,10 +320,10 @@
                 View Projects
               </a>
             </div>
-        
+
           </div>
-        
-          <!-- Contact Help Box -->
+
+          <!-- Contact Help Box (PRESERVED FROM 2026) -->
           <div class="contact-help-box" data-aos="fade-up">
             <h4><i class="icofont-question-circle"></i> Need Help With Your Project?</h4>
             <p>We're here to assist you in framing and developing your project idea!</p>
@@ -325,13 +334,31 @@
           </div>
         </div>
         </br>
+
+        <!-- 2026 Submitted Projects Section (NEW - DYNAMIC) -->
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <p><i>Submitted projects will appear here closer to the event.</i></p>
+            <h2 style="color: #004D40; margin-top: 40px; margin-bottom: 30px;">
+              BrainHack Marseille 2026 Projects
+            </h2>
+          </div>
+
+          <!-- Dynamic Projects Container -->
+          <div id="projects-container" class="row">
+
+            <!-- Loading indicator (shown while loading) -->
+            <div class="col-12 text-center" id="projects-loading">
+              <div class="spinner-border" role="status" style="width: 3rem; height: 3rem; color: #e76f51;">
+                <span class="sr-only">Loading...</span>
+              </div>
+              <p class="mt-3 text-muted">Loading submitted projects...</p>
+            </div>
+
           </div>
         </div>
+
       </div>
-    </section>
+    </section><!-- End Projects Section -->
 
     <!-- ======= Program Section ======= -->
     <section id="program" class="program section-bg">
@@ -479,7 +506,7 @@
                 <div class="time-slot general-path" data-aos="fade-up">
                   <div class="time-badge">16:30 - 17:00</div>
                   <div class="event-content">
-                      <h4><i class="icofont-coffee-cup"></i> Coffee Break</h4>
+                    <h4><i class="icofont-coffee-cup"></i> Coffee Break</h4>
                   </div>
                 </div>
 
@@ -805,7 +832,7 @@
           <h2>Previous Editions</h2>
           <p>Explore the history of BrainHack Marseille through our past events</p>
         </div>
-        
+
         <div class="edition-cards-container">
           <!-- 2024 Edition -->
           <div class="edition-card" data-aos="fade-up" data-aos-delay="100">
@@ -913,6 +940,9 @@
 
   <!-- Other JS File from Lucca website -->
   <script src="assets/js/countdown.js"></script>
+
+  <!-- Projects Renderer -->
+  <script src="assets/js/projects.js"></script>
 
 </body>
 
