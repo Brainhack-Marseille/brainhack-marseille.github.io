@@ -9,6 +9,14 @@ Approval Criteria:
 - Issues must have the label "status:web_ready" (primary)
 - Or "status:approved" (alternative)
 - Must also have "project" label
+- Both OPEN and CLOSED issues are included (closed = archived projects)
+
+Workflow:
+1. Participant submits project → Issue created (open)
+2. Admin reviews → Adds approval label (project:approved)
+3. Project appears on website
+4. Admin closes issue → Project remains on website (archived)
+5. If reopened and edited → Changes reflected on website
 """
 
 import os
@@ -26,18 +34,20 @@ APPROVAL_LABELS = ['project:approved']
 
 def fetch_approved_issues() -> List[Dict[str, Any]]:
     """
-    Fetch all approved project issues from GitHub.
+    Fetch all approved project issues from GitHub (both open and closed).
+    
+    Closed issues represent completed/archived projects that should remain visible.
     
     Returns:
         List of issue dictionaries containing project information
     """
     headers = {'Authorization': f'token {GITHUB_TOKEN}'} if GITHUB_TOKEN else {}
     
-    # Fetch all issues with 'project' label
+    # Fetch all issues with 'project' label (both open and closed)
     url = f'https://api.github.com/repos/{REPO}/issues'
     params = {
         'labels': 'project',
-        'state': 'open',  # Only open issues
+        'state': 'all',  # Fetch both open and closed issues
         'per_page': 100
     }
     
@@ -48,7 +58,7 @@ def fetch_approved_issues() -> List[Dict[str, Any]]:
     all_issues = response.json()
     print(f"   Found {len(all_issues)} issue(s) with 'project' label")
     
-    # Filter for approved issues
+    # Filter for approved issues (both open and closed)
     approved_issues = []
     for issue in all_issues:
         labels = [label['name'] for label in issue.get('labels', [])]
@@ -57,10 +67,11 @@ def fetch_approved_issues() -> List[Dict[str, Any]]:
         is_approved = any(label in labels for label in APPROVAL_LABELS)
         
         if is_approved:
+            state = issue.get('state', 'unknown')
             approved_issues.append(issue)
-            print(f"   ✓ #{issue['number']}: {issue['title']}")
+            print(f"   ✓ #{issue['number']}: {issue['title']} [{state}]")
     
-    print(f"\n✅ {len(approved_issues)} approved project(s)")
+    print(f"\n✅ {len(approved_issues)} approved project(s) (open + closed)")
     return approved_issues
 
 
