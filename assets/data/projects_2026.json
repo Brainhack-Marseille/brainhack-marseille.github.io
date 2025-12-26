@@ -1,5 +1,36 @@
 [
   {
+    "id": 82,
+    "title": "How do we really measure shape similarity? Rethinking metrics for complex 2D forms",
+    "leaders": "Marieva Vlachou",
+    "collaborators": "Jean Blouin",
+    "description": "This project is part of my PhD research on the processing of tactile spatial information. In a behavioral experiment, blindfolded participants explored the contour of a textured two-dimensional (2D) shape by tracing it with their index finger. Following this tactile exploration, participants completed two tasks:\n\nShape reproduction: participants were asked to reproduce the perceived shape by drawing it once with their finger.\n\nShape identification: participants were asked to identify the explored shape from a set of fifteen candidate shapes printed on a sheet (see attached figure). These candidates varied systematically in their geometric configuration and curvature, spanning different levels of similarity to the explored “reference” shape.\n\nThe central objective of this project is to quantify the similarity between the reference shape and the shapes either reproduced or selected by participants, by identifying variables that best capture shape similarity. As an initial approach, we employed Procrustes analysis and related geometric alignment methods commonly used in shape analysis to quantify dissimilarity between the reference shape, the reproduced shapes, and the perceived alternatives. However, when applied to this predefined set of shapes, these standard metrics did not yield satisfactory results: in particular, they failed to reproduce the intended similarity ranking of the candidate shapes (from most similar:1 to least similar:14, as illustrated in attached figure).\n\nThe shape data were extracted from video recordings of the tracing and drawing tasks and are represented as two-dimensional coordinate sequences (x–y contours) stored in spreadsheet format. \n\nThe challenge addressed by this project is to demonstrate the limitations of widely used shape similarity metrics when applied in isolation and to explore alternative, more integrative methods capable of capturing global shape similarity in complex or abstract 2D forms.\n\n<img width=\"510\" height=\"721\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/4ece6808-1b5a-4114-a63b-831d5fac97bc\" />",
+    "goals": "The goal of this project is to identify a metric, or a combination of complementary metrics, that can reliably capture and rank the similarity of the predefined set of 2-D shapes (see attached figure), and subsequently apply this similarity measure to the unknown shapes drawn by participants after the tactile exploration task.\n\n- Review and reproduce baseline shape similarity methods (e.g., Procrustes analysis, Chamfer distance, contour-based metrics) on the predefined shape set.\n- Quantitatively evaluate the limitations of these single-metric approaches by testing whether they recover the known similarity ranking of the predefined shapes.\n- Establish a shared data pipeline for loading, resampling, aligning, and visualizing 2D shape contours (MATLAB or Python).\n- Implement and compare multiple complementary shape descriptors (e.g., geometric ratios, curvature-based measures, frequency-domain descriptors, matching costs).\n- Explore CNN-inspired early-layer feature extraction (e.g., edge and orientation filters applied to rasterized shapes) as an alternative shape representation.\n\n**Expected deliverables**\nA benchmark comparison of single-metric versus multivariate shape similarity approaches.",
+    "learning": "",
+    "repository": "https://github.com/marievavl/Shape_reconstruction",
+    "communication": "https://brainhack.slack.com/archives/C0A5BKT0CBF",
+    "onboarding": "",
+    "data": "https://github.com/marievavl/Shape_reconstruction",
+    "skills": "MATLAB coding\nBrainstorming",
+    "good_first_issues": "1. issue one: shape preprocessing and visualization\n2. issue two: reproduce baseline shape similarity metrics",
+    "num_collaborators": "1-3",
+    "image": "",
+    "type": "pipeline_development",
+    "development_status": "1_basic structure",
+    "topics": "data_visualisation",
+    "tools": "other",
+    "programming_languages": "Matlab",
+    "modalities": "behavioral",
+    "git_skills": "0_no_git_skills",
+    "issue_url": "https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/82",
+    "created_at": "2025-12-24T14:46:27Z",
+    "updated_at": "2025-12-26T09:07:55Z",
+    "labels": [
+      "project",
+      "project:approved"
+    ]
+  },
+  {
     "id": 79,
     "title": "EyePrep: BIDS-App Eye-Tracking Preprocessing tool",
     "leaders": "Sina Kling (mattermost: @sinakling)\nMartin Szinte (mattermost: @martin_szinte)",
