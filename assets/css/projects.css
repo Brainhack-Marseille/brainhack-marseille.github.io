@@ -12,6 +12,82 @@
   margin-bottom: 30px;
 }
 
+/* ============================================
+   2026 PROJECTS HEADER STYLING
+   ============================================ */
+
+/* 2026 Projects Header */
+.projects-2026-header {
+  text-align: center;
+  margin: 60px 0 40px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, rgba(233, 196, 106, 0.1) 0%, rgba(231, 111, 81, 0.1) 100%);
+  border-radius: 15px;
+  border: 2px solid #e9c46a;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-2026-header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(231, 111, 81, 0.05) 0%, transparent 70%);
+  animation: pulse-bg 4s ease-in-out infinite;
+}
+
+@keyframes pulse-bg {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.projects-2026-header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.projects-2026-header h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #e76f51 0%, #e9c46a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 1px;
+}
+
+.projects-2026-header .header-icon {
+  font-size: 48px;
+  color: #e76f51;
+  margin-bottom: 15px;
+  display: inline-block;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.projects-2026-header .header-subtitle {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.projects-2026-header .header-divider {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #e76f51 0%, #e9c46a 100%);
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
 /* Projects Container */
 #projects-container {
   margin-top: 40px;
@@ -351,6 +427,24 @@
   border-bottom-color: #d85f41;
 }
 
+/* Images in project content */
+.detail-content img,
+.project-content-image {
+  max-width: 100%;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+/* Center large images */
+.detail-content img[width],
+.detail-content img[height] {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Close Button */
 .btn-close-details {
   padding: 12px 40px;
@@ -424,6 +518,20 @@
   
   .detail-content {
     font-size: 14px;
+  }
+  
+  /* 2026 Header responsive */
+  .projects-2026-header h3 {
+    font-size: 28px;
+  }
+  
+  .projects-2026-header .header-icon {
+    font-size: 36px;
+  }
+  
+  .projects-2026-header {
+    padding: 30px 15px;
+    margin: 40px 0 30px;
   }
 }
 
