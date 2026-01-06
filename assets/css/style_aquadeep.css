@@ -2077,3 +2077,865 @@ section {
 .memberBG5 {
   cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='60' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🐻</text></svg>") 16 0,auto;
 }
+
+/* ===================================
+   BrainHack Marseille 2026 - Enhanced Button Styles
+   Theme colors: #e76f51, #e9c46a, #2a9d8f, #264653
+   =================================== */
+
+/* Primary Call-to-Action Buttons */
+.btn-brainhack-primary {
+  background: linear-gradient(135deg, #e76f51 0%, #e9c46a 100%);
+  border: none;
+  color: white;
+  padding: 18px 45px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(231, 111, 81, 0.4);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn-brainhack-primary:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #2a9d8f 0%, #264653 100%);
+  transition: left 0.5s ease;
+  z-index: -1;
+}
+
+.btn-brainhack-primary:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(231, 111, 81, 0.6);
+  color: white;
+  text-decoration: none;
+}
+
+.btn-brainhack-primary:hover:before {
+  left: 0;
+}
+
+.btn-brainhack-primary:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+/* Secondary Button Style (for Submit Project) */
+.btn-brainhack-secondary {
+  background: linear-gradient(135deg, #2a9d8f 0%, #264653 100%);
+  border: none;
+  color: white;
+  padding: 18px 45px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(42, 157, 143, 0.4);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn-brainhack-secondary:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #e9c46a 0%, #e76f51 100%);
+  transition: left 0.5s ease;
+  z-index: -1;
+}
+
+.btn-brainhack-secondary:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(42, 157, 143, 0.6);
+  color: white;
+  text-decoration: none;
+}
+
+.btn-brainhack-secondary:hover:before {
+  left: 0;
+}
+
+.btn-brainhack-secondary:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+/* Pulsing Animation for Extra Attention */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 8px 20px rgba(231, 111, 81, 0.4);
+  }
+  50% {
+    box-shadow: 0 8px 35px rgba(231, 111, 81, 0.7);
+  }
+}
+
+.btn-brainhack-pulse {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Button Container Styling */
+.btn-brainhack-container {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.btn-brainhack-container h4 {
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Icon Enhancements */
+.btn-brainhack-primary i,
+.btn-brainhack-secondary i {
+  margin-right: 10px;
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .btn-brainhack-primary,
+  .btn-brainhack-secondary {
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-brainhack-primary,
+  .btn-brainhack-secondary {
+    padding: 12px 25px;
+    font-size: 1rem;
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+/* Alternate Style: Outlined Buttons (Optional) */
+.btn-brainhack-outline {
+  background: transparent;
+  border: 3px solid #e76f51;
+  color: #e76f51;
+  padding: 16px 40px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-brainhack-outline:hover {
+  background: #e76f51;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(231, 111, 81, 0.4);
+  text-decoration: none;
+}
+
+/* Special Registration Deadline Highlight */
+.deadline-highlight {
+  background: linear-gradient(135deg, #e76f51 0%, #ff0000 100%);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 800;
+  display: inline-block;
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* ===================================
+   BrainHack Marseille 2026 - Previous Editions Section Styles
+   =================================== */
+
+/* Previous Editions Section Base */
+.previous {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.previous .section-title h2 {
+  margin-bottom: 40px;
+}
+
+/* Edition Cards Container */
+.edition-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Edition Card */
+.edition-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(38, 70, 83, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+/* Gradient border effect on hover */
+.edition-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  padding: 2px;
+  background: linear-gradient(135deg, #e76f51, #e9c46a, #2a9d8f, #264653);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.edition-card:hover::before {
+  opacity: 1;
+}
+
+.edition-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(38, 70, 83, 0.2);
+}
+
+/* Year Badge */
+.edition-year {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #e76f51, #e9c46a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+/* Different gradient for each card */
+.edition-card:nth-child(1) .edition-year {
+  background: linear-gradient(135deg, #e76f51, #e9c46a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.edition-card:nth-child(2) .edition-year {
+  background: linear-gradient(135deg, #e9c46a, #2a9d8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.edition-card:nth-child(3) .edition-year {
+  background: linear-gradient(135deg, #2a9d8f, #264653);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.edition-card:nth-child(4) .edition-year {
+  background: linear-gradient(135deg, #264653, #e76f51);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.edition-card:nth-child(5) .edition-year {
+  background: linear-gradient(135deg, #e76f51, #2a9d8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.edition-card:nth-child(6) .edition-year {
+  background: linear-gradient(135deg, #2a9d8f, #e9c46a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Edition Title */
+.edition-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #264653;
+  margin-bottom: 20px;
+}
+
+/* View Edition Link/Button */
+.edition-link {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #e76f51, #e9c46a);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.edition-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #2a9d8f, #264653);
+  transition: left 0.4s ease;
+  z-index: 0;
+}
+
+.edition-link span {
+  position: relative;
+  z-index: 1;
+}
+
+.edition-link:hover::before {
+  left: 0;
+}
+
+.edition-link:hover {
+  color: white;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+/* Icon styling */
+.edition-icon {
+  font-size: 2.5rem;
+  color: #e76f51;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.edition-card:hover .edition-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Decorative element */
+.edition-card::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, rgba(233, 196, 106, 0.1), rgba(42, 157, 143, 0.1));
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.edition-card:hover::after {
+  top: -30px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .edition-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .edition-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+  }
+  
+  .edition-year {
+    font-size: 2.5rem;
+  }
+  
+  .edition-card {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .edition-cards-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  
+  .edition-year {
+    font-size: 2.2rem;
+  }
+}
+
+/* Alternative: Timeline Style (Optional) */
+.edition-timeline {
+  position: relative;
+  padding: 40px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.edition-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #e76f51, #e9c46a, #2a9d8f, #264653);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  text-align: right;
+  padding-right: 50%;
+}
+
+.timeline-item:nth-child(even) {
+  text-align: left;
+  padding-left: 50%;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: #e76f51;
+  border: 4px solid white;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 4px rgba(231, 111, 81, 0.2);
+}
+
+.timeline-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .edition-timeline::before {
+    left: 30px;
+  }
+  
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 0;
+  }
+  
+  .timeline-dot {
+    left: 30px;
+  }
+}
+
+/* ===================================
+   BrainHack Marseille 2026 - Project Links Section
+   =================================== */
+
+/* Option 1: Card-based Links (RECOMMENDED) */
+.project-links-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+.project-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.project-link-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(38, 70, 83, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-link-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #e76f51, #e9c46a, #2a9d8f);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.project-link-card:hover::before {
+  transform: scaleX(1);
+}
+
+.project-link-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(38, 70, 83, 0.15);
+  border-color: #e76f51;
+}
+
+.project-year-badge {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #e76f51, #e9c46a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.project-link-card:nth-child(2) .project-year-badge {
+  background: linear-gradient(135deg, #2a9d8f, #264653);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.project-link-card:nth-child(3) .project-year-badge {
+  background: linear-gradient(135deg, #e9c46a, #2a9d8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.project-link-text {
+  font-size: 0.95rem;
+  color: #264653;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.project-link-button {
+  display: inline-block;
+  padding: 10px 25px;
+  background: linear-gradient(135deg, #e76f51, #e9c46a);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-link-button:hover {
+  background: linear-gradient(135deg, #2a9d8f, #264653);
+  color: white;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+.project-link-icon {
+  font-size: 2rem;
+  color: #e76f51;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.project-link-card:hover .project-link-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Contact Box */
+.contact-help-box {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 40px;
+  text-align: center;
+  border-left: 4px solid #2a9d8f;
+}
+
+.contact-help-box h4 {
+  color: #264653;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.contact-help-box p {
+  color: #495057;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 25px;
+  background: white;
+  color: #264653;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.email-link:hover {
+  background: #264653;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(38, 70, 83, 0.2);
+}
+
+.email-link i {
+  font-size: 1.2rem;
+}
+
+
+/* Option 2: List with Icons */
+.project-links-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.project-links-list li {
+  margin-bottom: 15px;
+}
+
+.project-links-list a {
+  display: flex;
+  align-items: center;
+  padding: 18px 25px;
+  background: white;
+  border-radius: 10px;
+  color: #264653;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.project-links-list a i {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #e76f51;
+  transition: all 0.3s ease;
+}
+
+.project-links-list a:hover {
+  background: linear-gradient(135deg, #e76f51, #e9c46a);
+  color: white;
+  transform: translateX(10px);
+  box-shadow: 0 5px 15px rgba(231, 111, 81, 0.3);
+  border-left-color: #264653;
+}
+
+.project-links-list a:hover i {
+  color: white;
+  transform: scale(1.2);
+}
+
+
+/* Option 3: Compact Inline Badges */
+.project-badges-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.project-badge-link {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #e76f51, #e9c46a);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 3px 10px rgba(231, 111, 81, 0.3);
+  transition: all 0.3s ease;
+}
+
+.project-badge-link:hover {
+  background: linear-gradient(135deg, #2a9d8f, #264653);
+  color: white;
+  text-decoration: none;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(42, 157, 143, 0.4);
+}
+
+.project-badge-link i {
+  margin-right: 8px;
+}
+
+
+/* Intro Text Styling */
+.projects-intro-text {
+  font-size: 1.05rem;
+  color: #495057;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-links-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-year-badge {
+    font-size: 1.5rem;
+  }
+  
+  .contact-help-box {
+    padding: 20px 15px;
+  }
+  
+  .project-badge-link {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+
+/* Alternative: Timeline Style for Previous Projects */
+.projects-timeline {
+  position: relative;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px 0;
+}
+
+.projects-timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #e76f51, #e9c46a, #2a9d8f);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 30px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 11px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #e76f51;
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px rgba(231, 111, 81, 0.2);
+}
+
+.timeline-item:nth-child(2) .timeline-dot {
+  background: #e9c46a;
+  box-shadow: 0 0 0 3px rgba(233, 196, 106, 0.2);
+}
+
+.timeline-item:nth-child(3) .timeline-dot {
+  background: #2a9d8f;
+  box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.2);
+}
+
+.timeline-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.timeline-year {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #264653;
+  margin-bottom: 8px;
+}
+
+.timeline-link {
+  color: #e76f51;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.timeline-link:hover {
+  color: #2a9d8f;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .projects-timeline::before {
+    left: 15px;
+  }
+  
+  .timeline-item {
+    padding-left: 50px;
+  }
+  
+  .timeline-dot {
+    left: 6px;
+  }
+}

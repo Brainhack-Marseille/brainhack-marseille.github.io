@@ -103,6 +103,24 @@
 }
 
 /* Color coding for different session types */
+.general-path {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-left: 4px solid #adb5bd;
+}
+
+.general-path .time-badge {
+  background: linear-gradient(135deg, #adb5bd 0%, #868e96 100%);
+}
+
+.grey-path-silver {
+  background: linear-gradient(135deg, #f7f8f9 0%, #e8eaed 100%);
+  border-left: 4px solid #a8abb0;
+}
+
+.grey-path-silver .time-badge {
+  background: linear-gradient(135deg, #a8abb0 0%, #8a8d92 100%);
+}
+
 .beginner-path {
   background: linear-gradient(135deg, #fff9e6 0%, #ffefc6 100%);
   border-left: 4px solid #e9c46a;
