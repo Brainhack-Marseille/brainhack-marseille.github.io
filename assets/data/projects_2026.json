@@ -1,10 +1,10 @@
 [
   {
     "id": 86,
-    "title": "Join the efforts from the members of the MeCA team (https://meca-brain.org/) in developing and improving the wonderful open-source python package SLAM !\nSlam is an open source python package dedicated to the representation of neuroanatomical surfaces stemming from MRI data in the form of triangular meshes and to their processing and analysis.",
+    "title": "Slam: Surface anaLysis And Modeling",
     "leaders": "Guillaume Auzias @gauzias",
     "collaborators": "A group of great folks from the MeCA team, composed of researchers, PhD students, engineers.",
-    "description": "- We initiated, developed, use, share and maintain the SLAM package \n- We take the occasion of brainhacks to continuously improve our package in many ways, such as including new features, but also better code testing, tutorials etc\n- It is also the occasion to know more about this incredible resource, and learn to use it.\n- Our project is special and exciting just because we are a community of special and exciting folks, come to us to confirm!\n- To get started, visit the github repos and doc website of SLAM (links below) and prepare yourself to have fun.",
+    "description": "Join the efforts from the members of the MeCA team (https://meca-brain.org/) in developing and improving the wonderful open-source python package SLAM !\n\nSlam is an open source python package dedicated to the representation of neuroanatomical surfaces stemming from MRI data in the form of triangular meshes and to their processing and analysis.\n\n- We initiated, developed, use, share and maintain the SLAM package \n- We take the occasion of brainhacks to continuously improve our package in many ways, such as including new features, but also better code testing, tutorials etc\n- It is also the occasion to know more about this incredible resource, and learn to use it.\n- Our project is special and exciting just because we are a community of special and exciting folks, come to us to confirm!\n- To get started, visit the github repos and doc website of SLAM (links below) and prepare yourself to have fun.",
     "goals": "The goals during for this brainhack will be refined together at the beginning of the hacking session, but our global objective is to make SLAM better in all aspects.",
     "learning": "You might learn everything about SLAM and the MeCA team, and much more!",
     "repository": "https://github.com/brain-slam/slam",
@@ -24,7 +24,7 @@
     "git_skills": "1_commit_push",
     "issue_url": "https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/86",
     "created_at": "2026-01-06T19:19:51Z",
-    "updated_at": "2026-01-06T19:36:22Z",
+    "updated_at": "2026-01-06T19:40:04Z",
     "labels": [
       "project",
       "project:approved"
