@@ -1,5 +1,36 @@
 [
   {
+    "id": 86,
+    "title": "Join the efforts from the members of the MeCA team (https://meca-brain.org/) in developing and improving the wonderful open-source python package SLAM !\nSlam is an open source python package dedicated to the representation of neuroanatomical surfaces stemming from MRI data in the form of triangular meshes and to their processing and analysis.",
+    "leaders": "Guillaume Auzias @gauzias",
+    "collaborators": "A group of great folks from the MeCA team, composed of researchers, PhD students, engineers.",
+    "description": "- We initiated, developed, use, share and maintain the SLAM package \n- We take the occasion of brainhacks to continuously improve our package in many ways, such as including new features, but also better code testing, tutorials etc\n- It is also the occasion to know more about this incredible resource, and learn to use it.\n- Our project is special and exciting just because we are a community of special and exciting folks, come to us to confirm!\n- To get started, visit the github repos and doc website of SLAM (links below) and prepare yourself to have fun.",
+    "goals": "The goals during for this brainhack will be refined together at the beginning of the hacking session, but our global objective is to make SLAM better in all aspects.",
+    "learning": "You might learn everything about SLAM and the MeCA team, and much more!",
+    "repository": "https://github.com/brain-slam/slam",
+    "communication": "We will communicate orally because we will be physically in the same place, fuck covid19 !",
+    "onboarding": "https://brain-slam.github.io/slam/",
+    "data": "Toy data included in the repos",
+    "skills": "- ready to have fun\n- like to share ideas and views \n- python coding, eventually\n- interest in surface processing for neuroimaging",
+    "good_first_issues": "You might have a look at our issues:\nhttps://github.com/brain-slam/slam/issues",
+    "num_collaborators": "more",
+    "image": "![Image](https://github.com/user-attachments/assets/5e56a774-a210-4292-9cef-121338ec66f4)",
+    "type": "method_development",
+    "development_status": "2_releases_existing",
+    "topics": "other",
+    "tools": "other",
+    "programming_languages": "Python",
+    "modalities": "MRI",
+    "git_skills": "1_commit_push",
+    "issue_url": "https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/86",
+    "created_at": "2026-01-06T19:19:51Z",
+    "updated_at": "2026-01-06T19:36:22Z",
+    "labels": [
+      "project",
+      "project:approved"
+    ]
+  },
+  {
     "id": 82,
     "title": "How do we really measure shape similarity? Rethinking metrics for complex 2D forms",
     "leaders": "Marieva Vlachou",
