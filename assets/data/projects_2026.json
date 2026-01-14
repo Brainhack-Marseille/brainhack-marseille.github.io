@@ -1,5 +1,36 @@
 [
   {
+    "id": 88,
+    "title": "One Cell Wonder",
+    "leaders": "Jean-Michel Arbona - jean-michel.ARBONA@univ-amu.fr\nThéo Brunet - theo.BRUNET@univ-amu.fr\nMaëlle Spiller - maelle.SPILLER@univ-amu.fr",
+    "collaborators": "",
+    "description": "As members of the Institute of Developmental Biology of Marseille, we are interested in how a whole organism can emerge from a single cell. Although all cells contain the same genetic material, they differentiate during embryonic development into bone, skin, muscle, and many other cell types. This process is guided by a combination of factors, including gene regulation, interactions with neighboring cells, and chemical signals called morphogens, which form gradients that tell cells what they should become based on their position.\n\nInspired by a cellular automata video (https://www.youtube.com/watch?v=qwJNeq-WABU\n) showing how complex structures such as a lizard can arise from simple local rules, we want to recreate and extend this idea into a more complex system. By adjusting and adding rules, such as multiple cell types and different signals, we aim to explore how simple interactions can generate organized patterns. \n\nUltimately, we would like to apply this framework to model aspects of early brain development, in particular to model neurulation. \n\nWe do not aim to replicate real biology in detail, but rather to explore how far simple, biologically inspired rules can go in producing lifelike structures. We therefore want to experiment with key developmental patterning mechanisms, such as morphogen gradients and HOX-gene–like positional identity, to guide how cells differentiate and organize in space. And, of course, most importantly, we want to have fun exploring what emerges.",
+    "goals": "- implement a basic cellular automata grid starting from a single cell \n-  build a live visualization of the growing organism and its cell types \n- add simple local interaction rules that control cell division, and differentiation\n- Introduce and explore morphogen signals that influence cell fate  \n- explore how changing how changing morphogen rules affects neural tissue formation",
+    "learning": "- basic principles of developmental biology\n- concept of cellular automata\n- visualization and interactive design\n- collaborative, open science workflows",
+    "repository": "https://github.com/BrunetTheo/OneCellWonder/blob/main/README.md",
+    "communication": "will be established on-site",
+    "onboarding": "",
+    "data": "- https://www.youtube.com/watch?v=nLu4n7yNGdk\n- https://www.youtube.com/watch?v=qwJNeq-WABU\n- https://distill.pub/2020/growing-ca/",
+    "skills": "- basic python coding skills\n- git basics\nbut do not worry we aren't experts either",
+    "good_first_issues": "- https://www.youtube.com/watch?v=nLu4n7yNGdk\n- https://www.youtube.com/watch?v=qwJNeq-WABU\n- https://distill.pub/2020/growing-ca/",
+    "num_collaborators": "3-5",
+    "image": "![Image](https://github.com/user-attachments/assets/b9e4ab36-8e57-4a43-b910-58f0e6df47fe)",
+    "type": "coding_methods",
+    "development_status": "0_concept_no_content",
+    "topics": "other",
+    "tools": "Jupyter",
+    "programming_languages": "Python",
+    "modalities": "not_applicable",
+    "git_skills": "1_commit_push",
+    "issue_url": "https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/88",
+    "created_at": "2026-01-14T11:27:30Z",
+    "updated_at": "2026-01-14T13:43:16Z",
+    "labels": [
+      "project",
+      "project:approved"
+    ]
+  },
+  {
     "id": 86,
     "title": "Slam: Surface anaLysis And Modeling",
     "leaders": "Guillaume Auzias @gauzias",
