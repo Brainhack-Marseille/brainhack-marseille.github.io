@@ -1,5 +1,36 @@
 [
   {
+    "id": 89,
+    "title": "**Quantifying Neural Communication Across Brain Regions**",
+    "leaders": "Pietro Bozzo ( pietro.bozzo@univ-amu.fr, @pietrobozzo )\nGianmarco Cafaro ( g.cafaro14@studenti.unisa.it )\nGabriele Casagrande (gabriele.casagrande@univ-amu.fr, @gcasagrande )\nGiacomo Preti ( giacomo.preti@univ-amu.fr, @giapre )",
+    "collaborators": "",
+    "description": "The goal of this project is to study how interactions between brain regions support memory consolidation. We’ll do so by studying a network of regions well known for its role in the consolidation of spatial memory, namely hippocampus (HPC), medial prefrontal cortex (mPFC), and nucleus reuniens (NR). The interplay between HPC and mPFC supports first the creation of new memories and later their reorganization into stable representations, allowing subsequent retrieval. Due to its anatomical connections, the NR has been hypothesized to act as a mediator in the dialogue of these two regions, and we aim at characterizing this interaction.\n\nThe experimental data we’ll use comes from rats chronically implanted with silicon probes in the aforementioned structures. The animals were recorded while performing a spatial navigation learning task and during sleep pre- and post-learning. The data has already been preprocessed to extract the simultaneous spiking activity of hundreds of single neurons, as well as LFP and its characteristic oscillations (hippocampal ripples, thalamo-cortical spindles).\n\nWe aim to explore and test different metrics, or a combination of complementary metrics (e.g., synchronicity, dynamic functional connectivity, transfer entropy), to find hallmarks of communication in the activity of neurons recorded simultaneously from  multiple areas. \n\nAt this stage, we feel that receiving input from a broader community of researchers would be extremely valuable. We already have several techniques in mind that could be applied to this problem, and we would like to discuss them and refine them through interaction with others. We would also greatly appreciate additional perspectives and suggestions, and we believe that BrainHack could be an excellent environment to push this project forward.",
+    "goals": "- Test different metrics to extract information about the functional connection within and between the different recorded areas\n- Find evidence of learning through changes in network activity between pre- and post-task sleep",
+    "learning": "- Basic principles of memory consolidation physiology and its experimental study\n- Methods to analyze data coming from high-dimensional point processes\n- Interact in collaborative code environment",
+    "repository": "",
+    "communication": "no_communication_channel_yet",
+    "onboarding": "",
+    "data": "- High-density electrophysiology recordings\n- Spike trains\n- LFP",
+    "skills": "- Basic programming skills (Python)\n- Brainstorming and collaborative discussion",
+    "good_first_issues": "1. issue one:\n2. issue two:",
+    "num_collaborators": "more",
+    "image": "",
+    "type": "method_development",
+    "development_status": "0_concept_no_content",
+    "topics": "hypothesis_testing",
+    "tools": "other",
+    "programming_languages": "Python",
+    "modalities": "other",
+    "git_skills": "1_commit_push",
+    "issue_url": "https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/89",
+    "created_at": "2026-01-16T14:05:00Z",
+    "updated_at": "2026-01-16T14:39:27Z",
+    "labels": [
+      "project",
+      "project:approved"
+    ]
+  },
+  {
     "id": 88,
     "title": "One Cell Wonder",
     "leaders": "Jean-Michel Arbona - jean-michel.ARBONA@univ-amu.fr\nThéo Brunet - theo.BRUNET@univ-amu.fr\nMaëlle Spiller - maelle.SPILLER@univ-amu.fr",
