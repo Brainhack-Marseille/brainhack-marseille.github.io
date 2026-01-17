@@ -1,5 +1,36 @@
 [
   {
+    "id": 91,
+    "title": "AXB-ART: Comparing Machine-Predicted and Perceived Speech Similarity at the Sentence Level",
+    "leaders": "Zheng Yuan",
+    "collaborators": "Alessandro D'Ausilio, Noel Nguyen, Leonardo Lancia,",
+    "description": "The AXB-ART project implements a perceptual experiment to assess speech similarity using the Alternating Reading Task (ART) corpus. We compare machine-predicted similarity (using ECAPA-TDNN speaker embeddings with cosine similarity) against human perceptual judgments collected through an AXB paradigm experiment.\n\nIn the AXB task, participants listen to three audio samples (A, X, B) and determine which of A or B sounds more similar to X. The experiment uses data from French, Italian, and Slovak L2 English speakers, focusing on Solo (baseline) and Interactive conditions to investigate phonetic convergence.\n\nThe project includes both a desktop version (PsychoPy) and a web version, with a dynamic UI system, audio sequence playback management, and comprehensive data logging.",
+    "goals": "- Deploy and test the web-based version of the AXB experiment\n- Implement server-side data collection infrastructure\n- Recruit and run pilot participants (target: 5-10 L1-English listeners)\n- Develop data analysis pipeline for comparing machine vs. human similarity judgments\n- Calculate inter-rater reliability metrics\n- Improve documentation for experiment deployment and data analysis\n- Discuss potential extensions and refinements based on pilot results",
+    "learning": "- Designing and implementing psychoacoustic experiments with PsychoPy\n- Building web-based experiments with audio playback\n- Working with speech embeddings (ECAPA-TDNN) for similarity computation\n- Data analysis techniques for perceptual studies\n- Comparing objective ML metrics with human perception\n- Statistical analysis of agreement between machine and human judgments\n- Good practices for reproducible research in speech science",
+    "repository": "https://github.com/byronthecoder/AXB-ART",
+    "communication": "byron.zheng.yuan@outlook.com",
+    "onboarding": "[README.md](https://github.com/user-attachments/files/24679543/README.md)\n\n[Participant_Instructions.md](https://github.com/user-attachments/files/24679546/Participant_Instructions.md)",
+    "data": "The Alternating Reading Task (ART) corpus: a behavioural data set the the project leader collected featuring speech data from French, Italian, and Slovak L2 English speakers through an interactive reading task. The data set contains 58 speakers with approximately 120h recordings and demographic data.",
+    "skills": "- Python programming (50%): PsychoPy, pandas, numpy, scipy\n- Web development (20%): HTML/JavaScript for online experiments\n- Speech processing (15%): Understanding of acoustic features, embeddings\n- Data analysis (15%): Statistical methods, inter-rater reliability",
+    "good_first_issues": "1. Test the desktop experiment and provide feedback on instructions clarity\n2. Help implement data visualization for pilot results\n3. Review and improve documentation\n4. Test the web version across different browsers\n5. Assist with data preprocessing scripts",
+    "num_collaborators": "5-7",
+    "image": "<img width=\"1024\" height=\"1024\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/bb49afbf-b5cc-4d2e-8191-88157c1f05e3\" />",
+    "type": "method_development",
+    "development_status": "1_basic structure",
+    "topics": "hypothesis_testing",
+    "tools": "Jupyter",
+    "programming_languages": "Python",
+    "modalities": "behavioral",
+    "git_skills": "2_branches_PRs",
+    "issue_url": "https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/91",
+    "created_at": "2026-01-16T18:06:13Z",
+    "updated_at": "2026-01-17T02:33:41Z",
+    "labels": [
+      "project",
+      "project:approved"
+    ]
+  },
+  {
     "id": 89,
     "title": "**Quantifying Neural Communication Across Brain Regions**",
     "leaders": "Pietro Bozzo ( pietro.bozzo@univ-amu.fr, @pietrobozzo )\nGianmarco Cafaro ( g.cafaro14@studenti.unisa.it )\nGabriele Casagrande (gabriele.casagrande@univ-amu.fr, @gcasagrande )\nGiacomo Preti ( giacomo.preti@univ-amu.fr, @giapre )",
