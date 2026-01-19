@@ -4,7 +4,7 @@
     "title": "Braina: AI agent for Brain Interactions Analysis",
     "leaders": "Andrea Brovelli (https://twitter.com/BrovelliAndrea)\nMatteo Neri (https://twitter.com/matte_blacks)",
     "collaborators": "CEDRE (Aix-Marseille University)",
-    "description": "Do you want to learn how to study brain interactions from neural data? This project is for you!\nBring your own data and learn how to use recent tools developed by the BraiNets team of the INT: \nFrites toolbox: Framework for Information Theoretical analysis of Electrophysiological data and Statistics (https://brainets.github.io/frites/)\nHOI toolbox: Higher-Order Interactions (https://brainets.github.io/hoi/)\nYou will learn advanced methods from statistics, information theory and network science, combined with efficient optimisation software (JAX).\nYou will be assisted by human experts and by Braina, an AI agent (hopefully) expert in the analysis of complex neural interactions, serving as a comprehensive resource for researchers and students interested in applying information-theoretical measures for the analysis of functional interactions from electrophysiological data, such as fMRI, MEG, EEG, LFP, MUA multivariate time series.",
+    "description": "Do you want to learn how to study brain interactions from neural data? This project is for you!\nBring your own data and learn how to use recent tools developed by the BraiNets team of the INT: \nFrites toolbox: Framework for Information Theoretical analysis of Electrophysiological data and Statistics (https://brainets.github.io/frites/)\nHOI toolbox: Higher-Order Interactions (https://brainets.github.io/hoi/)\nYou will learn advanced methods from statistics, information theory and network science, combined with efficient optimisation software (JAX).\nYou will be assisted by human experts and by Braina, an AI agent (hopefully) expert in the analysis of complex neural interactions based on Gemini CLI. Braina should serve as a comprehensive resource for researchers and students interested in applying information-theoretical measures for the analysis of functional interactions from electrophysiological data, such as fMRI, MEG, EEG, LFP, MUA multivariate time series.",
     "goals": "Learn-by-doing",
     "learning": "Learn how to perform brain interaction analysis from neural time series",
     "repository": "https://github.com/brainets/braina",
@@ -24,7 +24,7 @@
     "git_skills": "1_commit_push",
     "issue_url": "https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/93",
     "created_at": "2026-01-19T15:37:14Z",
-    "updated_at": "2026-01-19T15:38:45Z",
+    "updated_at": "2026-01-19T15:39:22Z",
     "labels": [
       "project",
       "project:approved"
