@@ -479,7 +479,8 @@
    * Get project image with fallback
    */
   function getProjectImage(project) {
-    if (hasContent(project.image) && !project.image.includes('Leave this text')) {
+    // The Python script now extracts clean URLs, so we just need to validate and return
+    if (hasContent(project.image) && project.image.startsWith('http')) {
       return escapeHtml(project.image);
     }
     return DEFAULT_IMAGE;
