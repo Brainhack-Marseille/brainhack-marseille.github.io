@@ -119,31 +119,70 @@ def parse_issue_body(body: str) -> Dict[str, str]:
 def clean_text(text: str) -> str:
     """
     Clean and format text for JSON output.
-    
+
     Args:
         text: Raw text from issue
-        
+
     Returns:
         Cleaned text
     """
     if not text:
         return ''
-    
+
     # Remove "No response" placeholders
     if text.strip().lower() in ['no response', '*no response*', '_no response_']:
         return ''
-    
+
     # Remove placeholder instructions
     if 'PLEASE DELETE THESE INSTRUCTIONS' in text:
-        lines = [l for l in text.split('\n') 
+        lines = [l for l in text.split('\n')
                 if 'PLEASE DELETE' not in l and not l.strip().startswith('- (')]
         text = '\n'.join(lines).strip()
-    
+
     # Remove "Leave this text if you don't have an image yet"
     if "Leave this text if you don't have an image yet" in text:
         return ''
-    
+
     return text.strip()
+
+
+def extract_image_url(text: str) -> str:
+    """
+    Extract image URL from HTML img tag or markdown format.
+
+    Args:
+        text: Raw text containing image (HTML img tag, markdown, or plain URL)
+
+    Returns:
+        Clean image URL or empty string
+    """
+    if not text:
+        return ''
+
+    text = text.strip()
+
+    # Check for placeholder text
+    if "Leave this text if you don't have an image yet" in text:
+        return ''
+
+    # Try to extract from HTML img tag: <img ... src="URL" ... />
+    img_match = re.search(r'src=["\'](https?://[^"\']+)["\']', text)
+    if img_match:
+        return img_match.group(1)
+
+    # Try to extract from markdown: ![alt](URL)
+    md_match = re.search(r'!\[.*?\]\((https?://[^)]+)\)', text)
+    if md_match:
+        return md_match.group(1)
+
+    # Check if it's a plain URL
+    if text.startswith('http://') or text.startswith('https://'):
+        # Extract just the URL if there's extra text
+        url_match = re.search(r'(https?://[^\s]+)', text)
+        if url_match:
+            return url_match.group(1)
+
+    return ''
 
 
 def extract_project_data(issue: Dict[str, Any]) -> Dict[str, Any]:
@@ -185,10 +224,10 @@ def extract_project_data(issue: Dict[str, Any]) -> Dict[str, Any]:
         'skills': clean_text(sections.get('Skills', '')),
         'good_first_issues': clean_text(sections.get('Good first issues', '')),
         'num_collaborators': clean_text(sections.get('Number of collaborators', '')),
-        
-        # Visual
-        'image': clean_text(sections.get('Image', '')),
-        
+
+        # Visual - extract URL from HTML/markdown
+        'image': extract_image_url(sections.get('Image', '')),
+
         # Metadata (from dropdowns)
         'type': clean_text(sections.get('Type', '')),
         'development_status': clean_text(sections.get('Development status', '')),
