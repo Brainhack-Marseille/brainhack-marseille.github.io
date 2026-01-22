@@ -1,5 +1,36 @@
 [
   {
+    "id": 96,
+    "title": "Electronic laboratory notebook and BIDS conversion",
+    "leaders": "Sylvain TAKERKART, Dipankar BACHAR",
+    "collaborators": "Christelle Zielinski",
+    "description": "**eLab** is an electronic laboratory notebook for researchers. Which is useful for the acquisition of different experimental data/ metadata. Its aim is to no longer use a paper laboratory notebook and digitalize all the metadata related to experiments. This is useful for the data acquisition process by researchers. Also important in the data standardization process.\n\n**Brain Imaging Data Structure (BIDS)** is a simple and intuitive way to organize and describe data.  \n\nOur project is to facilitate the use of elabFTW and develop user friendly tools to create standardized organization of datasets in the context of development of open data.",
+    "goals": "With neuroscientists: if you are willing to use ElabFTW we can work with you to develop the forms to store and index specifically your experiments in elabFTW database.\n\nWith python developers: we can make progress together with a python package which will automatically convert/organize the raw data and metadata in BIDs format using the metadat stored in elabFTW.",
+    "learning": "",
+    "repository": "https://github.com/INT-NIT/elabforms\nhttps://github.com/INT-NIT/BEP032tools",
+    "communication": "https://mattermost.brainhack.org/brainhack/channels/bhg26-marseille-elabftw-bids",
+    "onboarding": "",
+    "data": "Data will be provided",
+    "skills": "Either:\n- You are a neuroscientist running experiments : Come with the details of your experiments\n- You are python developers, come with your coding skills",
+    "good_first_issues": "1. issue one:\n2. issue two:",
+    "num_collaborators": "3-5",
+    "image": "https://github.com/user-attachments/assets/76eaef3c-9450-4ec7-ad6d-b14af4a56471",
+    "type": "data_management",
+    "development_status": "1_basic structure",
+    "topics": "other",
+    "tools": "BIDS",
+    "programming_languages": "Python",
+    "modalities": "other",
+    "git_skills": "1_commit_push",
+    "issue_url": "https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/96",
+    "created_at": "2026-01-22T09:55:30Z",
+    "updated_at": "2026-01-22T09:56:03Z",
+    "labels": [
+      "project",
+      "project:approved"
+    ]
+  },
+  {
     "id": 93,
     "title": "Braina: AI agent for Brain Interactions Analysis",
     "leaders": "Andrea Brovelli (https://brovelli.github.io/)\nMatteo Neri (https://twitter.com/matte_blacks)",
