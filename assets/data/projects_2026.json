@@ -3,7 +3,7 @@
     "id": 96,
     "title": "Electronic laboratory notebook and BIDS conversion",
     "leaders": "Sylvain TAKERKART, Dipankar BACHAR",
-    "collaborators": "Christelle Zielinski , Samy SEGHIR",
+    "collaborators": "Christelle Zielinski , Laure Spieser, Samy SEGHIR",
     "description": "**eLab** is an electronic laboratory notebook for researchers. Which is useful for the acquisition of different experimental data/ metadata. Its aim is to no longer use a paper laboratory notebook and digitalize all the metadata related to experiments. This is useful for the data acquisition process by researchers. Also important in the data standardization process.\n\n**Brain Imaging Data Structure (BIDS)** is a simple and intuitive way to organize and describe data.  \n\nOur project is to facilitate the use of elabFTW and develop user friendly tools to create standardized organization of datasets in the context of development of open data.",
     "goals": "With neuroscientists: if you are willing to use ElabFTW we can work with you to develop the forms to store and index specifically your experiments in elabFTW database.\n\nWith python developers: we can make progress together with a python package which will automatically convert/organize the raw data and metadata in BIDs format using the metadat stored in elabFTW.",
     "learning": "",
@@ -24,7 +24,7 @@
     "git_skills": "1_commit_push",
     "issue_url": "https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/96",
     "created_at": "2026-01-22T09:55:30Z",
-    "updated_at": "2026-01-22T10:09:00Z",
+    "updated_at": "2026-01-22T10:23:34Z",
     "labels": [
       "project",
       "project:approved"
