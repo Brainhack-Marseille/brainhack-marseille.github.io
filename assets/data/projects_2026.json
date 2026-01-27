@@ -33,9 +33,9 @@
   {
     "id": 93,
     "title": "Braina: AI agent for Brain Interactions Analysis",
-    "leaders": "Andrea Brovelli (https://brovelli.github.io/)\nMatteo Neri (https://twitter.com/matte_blacks)",
+    "leaders": "Andrea Brovelli (https://brovelli.github.io/); \n\nMatteo Neri (https://twitter.com/matte_blacks)",
     "collaborators": "CEDRE Aix-Marseille University (https://www.univ-amu.fr/fr/public/cedre)",
-    "description": "Do you want to learn how to study brain interactions from neural data? This project is for you!\nBring your own data and learn how to use recent tools developed by the BraiNets team of the INT.\nThe aim is to investigate the nature of collective neural interactions from pairwise relations to higher-order interactions, and their role in cognition.\nThe project is open to novice as well as experts. New comers in the field will learn how to use two Python packages:\nFrites toolbox: Framework for Information Theoretical analysis of Electrophysiological data and Statistics (https://brainets.github.io/frites/)\nHOI toolbox: Higher-Order Interactions (https://brainets.github.io/hoi/)\nYou will learn advanced methods from statistics, information theory and network science, combined with efficient optimisation software (JAX). \nExperts will develop new analysis features and work on a new release of HOI, and help other participants.\nAll will be assisted by Braina, an AI agent (hopefully) expert in the analysis of complex neural interactions based on Gemini CLI. Braina should serve as a comprehensive resource for researchers and students interested in applying information-theoretical measures for the analysis of functional interactions from neuroimaging and electrophysiological data, such as fMRI, MEG, EEG, LFP, MUA and spiking multivariate data (more than one signal)!",
+    "description": "Do you want to learn how to study brain interactions from neural data? This project is for you!\n\nBring your own data and learn how to use recent tools developed by the BraiNets team of the INT.\n\nThe aim is to investigate the nature of collective neural interactions from pairwise relations to higher-order interactions, and their role in cognition. The project is open to novice as well as experts. New comers in the field will learn how to use two Python packages:\n1) Frites toolbox: Framework for Information Theoretical analysis of Electrophysiological data and Statistics (https://brainets.github.io/frites/)\n2) HOI toolbox: Higher-Order Interactions (https://brainets.github.io/hoi/)\nYou will learn advanced methods from statistics, information theory and network science, combined with efficient optimisation software (JAX). \n\nExperts will develop new analysis features and work on a new release of HOI, and help other participants. All will be assisted by Braina, an AI agent (hopefully) expert in the analysis of complex neural interactions based on Gemini CLI. Braina should serve as a comprehensive resource for researchers and students interested in applying information-theoretical measures for the analysis of functional interactions from neuroimaging and electrophysiological data, such as fMRI, MEG, EEG, LFP, MUA and spiking multivariate data (more than one signal)!",
     "goals": "Learn methods for brain interaction analysis from neural time series\nTest Braina\nDevelop new features and new release of Frites and HOI packages\nCreate working groups on simular datasets and research question",
     "learning": "Learn how to perform brain interaction analysis from neural time series",
     "repository": "https://github.com/brainets/braina",
@@ -55,7 +55,7 @@
     "git_skills": "1_commit_push",
     "issue_url": "https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/93",
     "created_at": "2026-01-19T15:37:14Z",
-    "updated_at": "2026-01-27T09:25:54Z",
+    "updated_at": "2026-01-27T09:28:09Z",
     "labels": [
       "project",
       "project:approved"
