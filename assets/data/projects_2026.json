@@ -1,7 +1,7 @@
 [
   {
     "id": 100,
-    "title": "**Methodological challenges in awake dog dMRI**",
+    "title": "Methodological challenges in awake dog dMRI",
     "leaders": "Mélina Cordeau",
     "collaborators": "Katherine Bryant, Hugo Dary, ...",
     "description": "_Collaborative development of a practical preprocessing workflow._\n\n• Verify data integrity (dMRI, bvals/bvecs, anatomy)\n• Check image orientation & awake-motion artifacts\n• Organize clean folder structure\n• Brain extraction on b0\n• Motion & distortion correction (eddy / outlier detection)\n• Quality control (motion parameters, residual artifacts)\n• Register dMRI to anatomical template\n• Document pipeline & parameters (reproducibility)\n• Extraction of the major tracts for visual control",
@@ -24,7 +24,7 @@
     "git_skills": "4_not_applicable",
     "issue_url": "https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues/100",
     "created_at": "2026-01-27T15:29:17Z",
-    "updated_at": "2026-01-27T16:06:07Z",
+    "updated_at": "2026-01-27T16:42:33Z",
     "labels": [
       "project",
       "project:approved"
