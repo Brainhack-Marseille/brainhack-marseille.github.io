@@ -10,6 +10,8 @@ Approval Criteria:
 - Or "status:approved" (alternative)
 - Must also have "project" label
 - Both OPEN and CLOSED issues are included (closed = archived projects)
+- Only issues created on/after EDITION_START_DATE are included, so that
+  projects from previous editions are not shown for the current edition
 
 Workflow:
 1. Participant submits project → Issue created (open)
@@ -28,8 +30,10 @@ from typing import List, Dict, Any
 # Configuration
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 REPO = os.environ.get('GITHUB_REPOSITORY', 'Brainhack-Marseille/brainhack-marseille.github.io')
-OUTPUT_FILE = 'assets/data/projects_2026.json'
+OUTPUT_FILE = 'assets/data/projects_2027.json'
 APPROVAL_LABELS = ['project:approved']
+# Issues created before this date belong to previous editions (ISO 8601, UTC)
+EDITION_START_DATE = '2026-06-01T00:00:00Z'
 
 
 def fetch_approved_issues() -> List[Dict[str, Any]]:
@@ -48,14 +52,20 @@ def fetch_approved_issues() -> List[Dict[str, Any]]:
     params = {
         'labels': 'project',
         'state': 'all',  # Fetch both open and closed issues
-        'per_page': 100
+        'per_page': 100,
+        'page': 1
     }
     
     print(f"📥 Fetching issues from {REPO}...")
-    response = requests.get(url, headers=headers, params=params)
-    response.raise_for_status()
-    
-    all_issues = response.json()
+    all_issues = []
+    while True:
+        response = requests.get(url, headers=headers, params=params)
+        response.raise_for_status()
+        page_issues = response.json()
+        all_issues.extend(page_issues)
+        if len(page_issues) < params['per_page']:
+            break
+        params['page'] += 1
     print(f"   Found {len(all_issues)} issue(s) with 'project' label")
     
     # Filter for approved issues (both open and closed)
@@ -66,12 +76,15 @@ def fetch_approved_issues() -> List[Dict[str, Any]]:
         # Check if issue has approval label
         is_approved = any(label in labels for label in APPROVAL_LABELS)
         
-        if is_approved:
+        # Skip issues from previous editions
+        is_current_edition = issue['created_at'] >= EDITION_START_DATE
+        
+        if is_approved and is_current_edition:
             state = issue.get('state', 'unknown')
             approved_issues.append(issue)
             print(f"   ✓ #{issue['number']}: {issue['title']} [{state}]")
     
-    print(f"\n✅ {len(approved_issues)} approved project(s) (open + closed)")
+    print(f"\n✅ {len(approved_issues)} approved project(s) (open + closed) since {EDITION_START_DATE}")
     return approved_issues
 
 
@@ -211,7 +224,7 @@ def extract_project_data(issue: Dict[str, Any]) -> Dict[str, Any]:
         
         # Content
         'description': clean_text(sections.get('Project Description', '')),
-        'goals': clean_text(sections.get('Goals for Brainhack Marseille 2026', '')),
+        'goals': clean_text(sections.get('Goals for Brainhack Marseille 2027', '')),
         'learning': clean_text(sections.get('What will participants learn?', '')),
         
         # Resources

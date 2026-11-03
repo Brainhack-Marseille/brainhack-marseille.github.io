@@ -1,5 +1,5 @@
 /**
- * BrainHack Marseille 2026 - Projects Renderer with Full-Width Dropdown
+ * BrainHack Marseille 2027 - Projects Renderer with Full-Width Dropdown
  * Fixed version with proper URL parsing and conditional rendering
  */
 
@@ -7,7 +7,7 @@
   'use strict';
 
   // Configuration
-  const PROJECTS_JSON_URL = 'assets/data/projects_2026.json';
+  const PROJECTS_JSON_URL = 'assets/data/projects_2027.json';
   const CONTAINER_ID = 'projects-container';
   const LOADING_ID = 'projects-loading';
   const DEFAULT_IMAGE = 'https://brainhack-marseille.github.io/BHM_2024/images/projects/project_template.png';
@@ -293,7 +293,7 @@
               
               ${hasContent(project.goals) ? `
                 <div class="detail-section-fullwidth">
-                  <h5><i class="icofont-bullseye"></i> Goals for BrainHack Marseille 2026</h5>
+                  <h5><i class="icofont-bullseye"></i> Goals for BrainHack Marseille 2027</h5>
                   <div class="detail-content">${formatMarkdown(project.goals)}</div>
                 </div>
               ` : ''}
@@ -672,6 +672,14 @@
       loading.remove();
     }
     
+    // Browsers block fetch() on pages opened directly from disk (file://)
+    const hint = window.location.protocol === 'file:'
+      ? `<p class="small text-muted">This page was opened directly from disk, so the browser blocked loading the
+           projects data. Preview it through a local web server instead, e.g. run
+           <code>python3 -m http.server</code> in the repository folder and open
+           <code>http://localhost:8000</code>.</p>`
+      : `<p class="small text-muted">If the problem persists, contact the organizers.</p>`;
+
     if (container) {
       container.innerHTML = `
         <div class="col-12">
@@ -679,7 +687,7 @@
             <i class="icofont-warning" style="font-size: 48px; display: block; margin-bottom: 15px;"></i>
             <h4>Error Loading Projects</h4>
             <p>Sorry, we couldn't load the projects. Please try refreshing the page.</p>
-            <p class="small text-muted">If the problem persists, contact the organizers.</p>
+            ${hint}
           </div>
         </div>
       `;
