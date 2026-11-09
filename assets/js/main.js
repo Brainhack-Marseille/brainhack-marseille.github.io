@@ -203,7 +203,7 @@
 
   var img = document.getElementById("mrs_bb"),
     count = 0;
-  img.onclick = function() {
+  if (img) img.onclick = function() {
     count += 1;
     if (count==13) {
       window.open("https://theuselessweb.com/");
@@ -212,6 +212,7 @@
 
 var aud = document.getElementById("aud");
 var alpr = document.getElementById("alpr");
+if (alpr) {
 alpr.addEventListener("mouseover", function( event ) {  
   // var aud = document.getElementById("aud");
   aud.play();
@@ -235,6 +236,7 @@ alpr.addEventListener("mouseout", function( event ) {
     alpr.style.color = '#0098D5';
   }, 8000);
 }, false);
+}
 
 
 })(jQuery);
